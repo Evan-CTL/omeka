@@ -4,6 +4,7 @@ MAINTAINER ccnmtl <ccnmtl-sysadmin@columbia.edu>
 RUN apt-get update
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y --force-yes install imagemagick
 
+COPY ./files/db.ini /app/db.ini
 COPY ./files/application/config/config.ini /app/application/config/config.ini
 COPY ./files/plugins/ /app/plugins/
 
