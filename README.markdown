@@ -18,7 +18,7 @@ Where, omeka-data is simply
 
   /usr/bin/docker run \
      --name=omeka-data \
-     -v /var/local/docker/data/omeka-files:/app/files \
+     -v /var/local/docker/ data/omeka-files:/app/files \
      -v /app/files \
      localhost:5000/ccnmtl/omeka \
      /bin/echo I am a data only container
