@@ -1,7 +1,10 @@
-CCNMTL's customized Omeka container
+CTL's Omeka container
 
-This builds off of `erochest/omeka` and adds our basic set of
-plugins.
+This used to be based on `erochest/omeka`, but we needed to upgrade to a newer omeka, and now build the omeka image ourselves and then adds our plugins.
+
+The db.ini looks for database credentials in the default mysql environment variables, and can be set up with a linked mysql container (in dev), or against our database server in prod. 
+
+See http://wiki.ccnmtl.columbia.edu/index.php/Docker_-izing_Omeka for more info. 
 
 This omeka container needs to be linked to a postfix container and a storage container, and optionally, a mysql container (unless it is set up to connect to a non-docker mysql database).
 
