@@ -1,17 +1,13 @@
-
 FROM tutum/apache-php:latest
 MAINTAINER ccnmtl <ccnmtl-sysadmin@columbia.edu>
 
 # adapted from https://github.com/erochest/docker-omeka/blob/master/Dockerfile
 
-# RUN DEBIAN_FRONTEND=noninteractive apt-get -y install software-properties-common
-#RUN add-apt-repository ppa:ondrej/apache2
-RUN apt-get update
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y install software-properties-common
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y --force-yes install imagemagick
-RUN DEBIAN_FRONTEND=noninteractive apt-get -y --force-yes install apache2
-
-RUN a2enmod rewrite
+RUN DEBIAN_FRONTEND=noninteractive apt-get update \
+  && apt-get -y --force-yes install apache2 imagemagick software-properties-common \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/* \
+  && a2enmod rewrite
 
 COPY ./files/omeka-2.4.1/ /app/
 RUN chmod -R a+rwx /app/files
