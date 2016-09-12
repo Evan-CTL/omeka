@@ -1,4 +1,4 @@
-CTL's Omeka container
+# CTL's Omeka container
 
 This used to be based on `erochest/omeka`, but we needed to upgrade to a newer omeka, and now build the omeka image ourselves and then adds our plugins.
 
@@ -25,3 +25,20 @@ Where, omeka-data is simply
      -v /app/files \
      localhost:5000/ccnmtl/omeka \
      /bin/echo I am a data only container
+
+## docker-compose
+
+If you have `docker-compose` installed, the simplest way to use this
+for development is to checkout the code, go into the directory with it
+and run:
+
+    $ docker-compose up
+
+Then visit `http://localhost:8880/install/install.php` and configure
+your site. If you run into a message that `mod_rewrite` isn't enabled,
+you may need to manually change the path `/install/install.php`
+(something seems buggy with omeka's module detection).
+
+This setup should be enough to get started with, but is not ideal for
+production since it doesn't split out the data volume. If you want a
+persistent data volume, you will need to set it up as described above.
