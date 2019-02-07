@@ -40,7 +40,7 @@ and run:
 
 Then visit `http://localhost:8880/install/install.php` and configure
 your site. If you run into a message that `mod_rewrite` isn't enabled,
-you may need to manually change the path `/install/install.php`
+you may need to manually change the path to `/install/install.php`
 (something seems buggy with omeka's module detection).
 
 This setup should be enough to get started with, but is not ideal for
