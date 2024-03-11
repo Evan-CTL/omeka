@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -29,7 +29,7 @@ class getid3_dss extends getid3_handler
 			return false;
 		}
 
-		// some structure information taken from http://cpansearch.perl.org/src/RGIBSON/Audio-DSS-0.02/lib/Audio/DSS.pm
+		// some structure information taken from https://cpansearch.perl.org/src/RGIBSON/Audio-DSS-0.02/lib/Audio/DSS.pm
 		$info['encoding']              = 'ISO-8859-1'; // not certain, but assumed
 		$info['dss'] = array();
 

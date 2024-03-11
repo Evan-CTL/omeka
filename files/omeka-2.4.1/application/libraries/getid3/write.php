@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -40,7 +40,7 @@ if (!include_once(GETID3_INCLUDEPATH.'getid3.lib.php')) {
 // * YEAR
 // * ATTACHED_PICTURE (ID3v2 only)
 //
-// http://www.personal.uni-jena.de/~pfk/mpp/sv8/apekey.html
+// https://www.personal.uni-jena.de/~pfk/mpp/sv8/apekey.html
 // The APEv2 Tag Items Keys definition says "TRACK" is correct but foobar2000 uses "TRACKNUMBER" instead
 // Pass data here as "TRACKNUMBER" for compatability with all formats
 
@@ -55,7 +55,7 @@ class getid3_writetags
 	public $overwrite_tags     = true;          // if true will erase existing tag data and write only passed data; if false will merge passed data with existing tag data
 	public $remove_other_tags  = false;          // if true will erase remove all existing tags and only write those passed in $tagformats; if false will ignore any tags not mentioned in $tagformats
 
-	public $id3v2_tag_language = 'eng';          // ISO-639-2 3-character language code needed for some ID3v2 frames (http://www.id3.org/iso639-2.html)
+	public $id3v2_tag_language = 'eng';          // ISO-639-2 3-character language code needed for some ID3v2 frames (https://www.id3.org/iso639-2.html)
 	public $id3v2_paddedlength = 4096;           // minimum length of ID3v2 tags (will be padded to this length if tag data is shorter)
 
 	public $warnings           = array();        // any non-critical errors will be stored here

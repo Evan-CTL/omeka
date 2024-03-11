@@ -3,7 +3,7 @@
  * Omeka
  * 
  * @copyright Copyright 2007-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
 /**
@@ -62,7 +62,7 @@ class Omeka_View_Helper_FileMarkup extends Zend_View_Helper_Abstract
     /**
      * Array of file extensions and the callbacks that can process them.
      * 
-     * Taken from http://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
+     * Taken from https://svn.apache.org/repos/asf/httpd/httpd/trunk/docs/conf/mime.types
      * 
      * @var array
      */

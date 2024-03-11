@@ -3,7 +3,7 @@
  * Omeka
  * 
  * @copyright Copyright 2007-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
 /**
@@ -15,7 +15,7 @@ class SystemInfoController extends Omeka_Controller_AbstractActionController
     {
         if (!get_option('display_system_info')) {
             // Requires forward in addition to redirect because of ZF bug:
-            // http://framework.zend.com/issues/browse/ZF-7496
+            // https://framework.zend.com/issues/browse/ZF-7496
             $request = $this->getRequest();
             $request->setActionName('index');
             $request->setControllerName('index');

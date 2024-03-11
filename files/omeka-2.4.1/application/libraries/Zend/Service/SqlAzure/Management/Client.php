@@ -7,7 +7,7 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
@@ -15,8 +15,8 @@
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Management
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
@@ -47,8 +47,8 @@
  * @category   Zend
  * @package    Zend_Service_SqlAzure
  * @subpackage Management
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_SqlAzure_Management_Client
 {
@@ -365,7 +365,7 @@ class Zend_Service_SqlAzure_Management_Client
                 $response = $this->_performRequest(self::OP_SERVERS, '',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<Server xmlns="http://schemas.microsoft.com/sqlazure/2010/12/"><AdministratorLogin>' . $administratorLogin . '</AdministratorLogin><AdministratorLoginPassword>' . $administratorPassword . '</AdministratorLoginPassword><Location>' . $location . '</Location></Server>');
+    		'<Server xmlns="https://schemas.microsoft.com/sqlazure/2010/12/"><AdministratorLogin>' . $administratorLogin . '</AdministratorLogin><AdministratorLoginPassword>' . $administratorPassword . '</AdministratorLoginPassword><Location>' . $location . '</Location></Server>');
  	
                 if ($response->isSuccessful()) {
 			$xml = $this->_parseResponse($response);
@@ -464,7 +464,7 @@ class Zend_Service_SqlAzure_Management_Client
             $response = $this->_performRequest(self::OP_SERVERS . '/' . $serverName, '?op=ResetPassword',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<AdministratorLoginPassword xmlns="http://schemas.microsoft.com/sqlazure/2010/12/">' . $administratorPassword . '</AdministratorLoginPassword>');
+    		'<AdministratorLoginPassword xmlns="https://schemas.microsoft.com/sqlazure/2010/12/">' . $administratorPassword . '</AdministratorLoginPassword>');
     		
             if (!$response->isSuccessful()) {
 		require_once 'Zend/Service/SqlAzure/Management/Exception.php';
@@ -504,7 +504,7 @@ class Zend_Service_SqlAzure_Management_Client
             $response = $this->_performRequest(self::OP_SERVERS . '/' . $serverName . '/' . self::OP_FIREWALLRULES . '/' . $ruleName, '',
     		Zend_Http_Client::PUT,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<FirewallRule xmlns="http://schemas.microsoft.com/sqlazure/2010/12/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://schemas.microsoft.com/sqlazure/2010/12/ FirewallRule.xsd"><StartIpAddress>' . $startIpAddress . '</StartIpAddress><EndIpAddress>' . $endIpAddress . '</EndIpAddress></FirewallRule>');
+    		'<FirewallRule xmlns="https://schemas.microsoft.com/sqlazure/2010/12/" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://schemas.microsoft.com/sqlazure/2010/12/ FirewallRule.xsd"><StartIpAddress>' . $startIpAddress . '</StartIpAddress><EndIpAddress>' . $endIpAddress . '</EndIpAddress></FirewallRule>');
 
             if ($response->isSuccessful()) {
 		

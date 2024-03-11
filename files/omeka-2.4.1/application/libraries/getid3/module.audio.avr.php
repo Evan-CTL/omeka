@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -21,8 +21,8 @@ class getid3_avr extends getid3_handler
 	public function Analyze() {
 		$info = &$this->getid3->info;
 
-		// http://cui.unige.ch/OSG/info/AudioFormats/ap11.html
-		// http://www.btinternet.com/~AnthonyJ/Atari/programming/avr_format.html
+		// https://cui.unige.ch/OSG/info/AudioFormats/ap11.html
+		// https://www.btinternet.com/~AnthonyJ/Atari/programming/avr_format.html
 		// offset    type    length    name        comments
 		// ---------------------------------------------------------------------
 		// 0    char    4    ID        format ID == "2BIT"

@@ -359,7 +359,7 @@
 
   - Improves the process by which Omeka items are imported into Neatline exhibits. Instead distinguishing between "Neatline" and "Omeka" records, _everything_ is a Neatline record, and any Neatline record can be linked to any Omeka item in the underlying collection.
 
-  - Replaces CLEditor (the rich-text editor used on the "Title" and "Body" fields) with [CKEditor](http://ckeditor.com/), a more robust solution that makes it easier to create well-formatted record content and import video and audio media. Also adds a "fullscreen" editing mode for long-format content.
+  - Replaces CLEditor (the rich-text editor used on the "Title" and "Body" fields) with [CKEditor](https://ckeditor.com/), a more robust solution that makes it easier to create well-formatted record content and import video and audio media. Also adds a "fullscreen" editing mode for long-format content.
 
   - Makes it possible to add WMS overlays to exhibits by entering a WMS address and layer id directly into the edit form for a Neatline record (instead of linking the record to an Omeka item with a WMS service added by way of the old NeatlineMaps plugin).
 
@@ -391,7 +391,7 @@
 
 #### Development Workflow Changes
 
-  - Uses [Grunt](http://gruntjs.com/) to manage dependencies, build the application, compile static assets, and run tests.
+  - Uses [Grunt](https://gruntjs.com/) to manage dependencies, build the application, compile static assets, and run tests.
 
   - Moves to [Stylus](https://github.com/learnboost/stylus) for all application stylesheets.
 

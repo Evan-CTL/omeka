@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -37,8 +37,8 @@ class getid3_amr extends getid3_handler
 		$info['fileformat']               = 'amr';
 		$info['audio']['dataformat']      = 'amr';
 		$info['audio']['bitrate_mode']    = 'vbr';   // within a small predefined range: 4.75kbps to 12.2kbps
-		$info['audio']['bits_per_sample'] =    13;   // http://en.wikipedia.org/wiki/Adaptive_Multi-Rate_audio_codec: "Sampling frequency 8 kHz/13-bit (160 samples for 20 ms frames), filtered to 200–3400 Hz"
-		$info['audio']['sample_rate']     =  8000;   // http://en.wikipedia.org/wiki/Adaptive_Multi-Rate_audio_codec: "Sampling frequency 8 kHz/13-bit (160 samples for 20 ms frames), filtered to 200–3400 Hz"
+		$info['audio']['bits_per_sample'] =    13;   // https://en.wikipedia.org/wiki/Adaptive_Multi-Rate_audio_codec: "Sampling frequency 8 kHz/13-bit (160 samples for 20 ms frames), filtered to 200–3400 Hz"
+		$info['audio']['sample_rate']     =  8000;   // https://en.wikipedia.org/wiki/Adaptive_Multi-Rate_audio_codec: "Sampling frequency 8 kHz/13-bit (160 samples for 20 ms frames), filtered to 200–3400 Hz"
 		$info['audio']['channels']        =     1;
 		$thisfile_amr['frame_mode_count'] = array(0=>0, 1=>0, 2=>0, 3=>0, 4=>0, 5=>0, 6=>0, 7=>0);
 

@@ -3,7 +3,7 @@
  * Simple Pages
  *
  * @copyright Copyright 2008-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
 /**
@@ -105,7 +105,7 @@ class SimplePages_IndexController extends Omeka_Controller_AbstractActionControl
                 'value' => $page->text,
                 'label' => __('Text'),
                 'description' => __(
-                    'Add content for page. This field supports shortcodes. For a list of available shortcodes, refer to the <a target=_blank href="http://omeka.org/codex/Shortcodes">Omeka Codex</a>.'
+                    'Add content for page. This field supports shortcodes. For a list of available shortcodes, refer to the <a target=_blank href="https://omeka.org/codex/Shortcodes">Omeka Codex</a>.'
                 )
             )
         );

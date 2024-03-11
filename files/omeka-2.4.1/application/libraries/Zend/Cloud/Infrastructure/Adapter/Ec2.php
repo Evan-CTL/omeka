@@ -3,8 +3,8 @@
  * @category   Zend
  * @package    Zend_Cloud_Infrastructure
  * @subpackage Adapter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 
 require_once 'Zend/Service/Amazon/Ec2/Instance.php';
@@ -22,8 +22,8 @@ require_once 'Zend/Cloud/Infrastructure/Adapter/AbstractAdapter.php';
  *
  * @package    Zend_Cloud_Infrastructure
  * @subpackage Adapter
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Cloud_Infrastructure_Adapter_Ec2 extends Zend_Cloud_Infrastructure_Adapter_AbstractAdapter
 {

@@ -3,7 +3,7 @@
  * PHP Geometry GeoHash encoder/decoder.
  *
  * @author prinsmc
- * @see http://en.wikipedia.org/wiki/Geohash
+ * @see https://en.wikipedia.org/wiki/Geohash
  *
  */
 class GeoHash extends GeoAdapter{

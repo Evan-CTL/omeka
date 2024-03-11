@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -33,12 +33,12 @@ class getid3_jpg extends getid3_handler
 
 		$imageinfo = array();
 		//list($width, $height, $type) = getid3_lib::GetDataImageSize($this->fread($info['filesize']), $imageinfo);
-		list($width, $height, $type) = getimagesize($info['filenamepath'], $imageinfo); // http://www.getid3.org/phpBB3/viewtopic.php?t=1474
+		list($width, $height, $type) = getimagesize($info['filenamepath'], $imageinfo); // https://www.getid3.org/phpBB3/viewtopic.php?t=1474
 
 
 		if (isset($imageinfo['APP13'])) {
-			// http://php.net/iptcparse
-			// http://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/IPTC.html
+			// https://php.net/iptcparse
+			// https://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/IPTC.html
 			$iptc_parsed = iptcparse($imageinfo['APP13']);
 			if (is_array($iptc_parsed)) {
 				foreach ($iptc_parsed as $iptc_key_raw => $iptc_values) {
@@ -181,7 +181,7 @@ class getid3_jpg extends getid3_handler
 
 
 	public function IPTCrecordName($iptc_record) {
-		// http://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/IPTC.html
+		// https://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/IPTC.html
 		static $IPTCrecordName = array();
 		if (empty($IPTCrecordName)) {
 			$IPTCrecordName = array(
@@ -198,7 +198,7 @@ class getid3_jpg extends getid3_handler
 
 
 	public function IPTCrecordTagName($iptc_record, $iptc_tagkey) {
-		// http://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/IPTC.html
+		// https://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/IPTC.html
 		static $IPTCrecordTagName = array();
 		if (empty($IPTCrecordTagName)) {
 			$IPTCrecordTagName = array(

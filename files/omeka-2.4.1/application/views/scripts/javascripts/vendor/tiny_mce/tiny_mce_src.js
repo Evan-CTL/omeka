@@ -55,7 +55,7 @@
 			for (i=0; i<nl.length; i++) {
 				v = nl[i].href;
 				if (v) {
-					// Host only value like http://site.com or http://site.com:8008
+					// Host only value like https://site.com or https://site.com:8008
 					if (/^https?:\/\/[^\/]+$/.test(v))
 						v += '/';
 
@@ -855,13 +855,13 @@ tinymce.create('tinymce.util.Dispatcher', {
 			if (u.indexOf('/') === 0 && u.indexOf('//') !== 0)
 				u = (s.base_uri ? s.base_uri.protocol || 'http' : 'http') + '://mce_host' + u;
 
-			// Relative path http:// or protocol relative //path
+			// Relative path https:// or protocol relative //path
 			if (!/^[\w\-]*:?\/\//.test(u)) {
 				base_url = s.base_uri ? s.base_uri.path : new tinymce.util.URI(location.href).directory;
 				u = ((s.base_uri && s.base_uri.protocol) || 'http') + '://mce_host' + t.toAbsPath(base_url, u);
 			}
 
-			// Parse URL (Credits goes to Steave, http://blog.stevenlevithan.com/archives/parseuri)
+			// Parse URL (Credits goes to Steave, https://blog.stevenlevithan.com/archives/parseuri)
 			u = u.replace(/@@/g, '(mce_at)'); // Zope 3 workaround, they use @@something
 			u = /^(?:(?![^:@]+:[^:@\/]*@)([^:\/?#.]+):)?(?:\/\/)?((?:(([^:@\/]*):?([^:@\/]*))?@)?([^:\/?#]*)(?::(\d*))?)(((\/(?:[^?#](?![^?#\/]*\.[^?#\/.]+(?:[?#]|$)))*\/?)?([^?#\/]*))(?:\?([^#]*))?(?:#(.*))?)/.exec(u);
 			each(["source","protocol","authority","userInfo","user","password","host","port","relative","path","directory","file","query","anchor"], function(v, i) {
@@ -1570,7 +1570,7 @@ tinymce.util.Quirks = function(editor) {
 		editor.onClick.add(function(editor, e) {
 			e = e.target;
 
-			// Workaround for bug, http://bugs.webkit.org/show_bug.cgi?id=12250
+			// Workaround for bug, https://bugs.webkit.org/show_bug.cgi?id=12250
 			// WebKit can't even do simple things like selecting an image
 			// Needs tobe the setBaseAndExtend or it will fail to select floated images
 			if (/^(IMG|HR)$/.test(e.nodeName)) {
@@ -5015,7 +5015,7 @@ tinymce.dom = {};
 				(function() {
 					try {
 						// If IE is used, use the trick by Diego Perini licensed under MIT by request to the author.
-						// http://javascript.nwbox.com/IEContentLoaded/
+						// https://javascript.nwbox.com/IEContentLoaded/
 						doc.documentElement.doScroll("left");
 					} catch (ex) {
 						setTimeout(arguments.callee, 0);
@@ -12261,7 +12261,7 @@ tinymce.create('tinymce.ui.Toolbar:tinymce.ui.Container', {
 				doctype : tinymce.isIE6 ? '<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">' : '<!DOCTYPE>', // Use old doctype on IE 6 to avoid horizontal scroll
 				visual : TRUE,
 				font_size_style_values : 'xx-small,x-small,small,medium,large,x-large,xx-large',
-				font_size_legacy_values : 'xx-small,small,medium,large,x-large,xx-large,300%', // See: http://www.w3.org/TR/CSS2/fonts.html#propdef-font-size
+				font_size_legacy_values : 'xx-small,small,medium,large,x-large,xx-large,300%', // See: https://www.w3.org/TR/CSS2/fonts.html#propdef-font-size
 				apply_source_formatting : TRUE,
 				directionality : 'ltr',
 				forced_root_block : 'p',
@@ -12583,7 +12583,7 @@ tinymce.create('tinymce.ui.Toolbar:tinymce.ui.Container', {
 			if (document.domain && location.hostname != document.domain)
 				tinymce.relaxedDomain = document.domain;
 
-			t.iframeHTML = s.doctype + '<html><head xmlns="http://www.w3.org/1999/xhtml">';
+			t.iframeHTML = s.doctype + '<html><head xmlns="https://www.w3.org/1999/xhtml">';
 
 			// We only need to override paths if we have to
 			// IE has a bug where it remove site absolute urls to relative ones if this is specified
@@ -14013,7 +14013,7 @@ tinymce.create('tinymce.ui.Toolbar:tinymce.ui.Container', {
 					if (tinymce.isGecko) {
 						editor.windowManager.confirm(editor.getLang('clipboard_msg'), function(state) {
 							if (state)
-								open('http://www.mozilla.org/editor/midasdemo/securityprefs.html', '_blank');
+								open('https://www.mozilla.org/editor/midasdemo/securityprefs.html', '_blank');
 						});
 					} else
 						editor.windowManager.alert(editor.getLang('clipboard_no_support'));

@@ -8,7 +8,7 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
@@ -17,8 +17,8 @@
  * @package    Zend_Http
  * @subpackage Response
  * @version    $Id$
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 
 /**
@@ -33,8 +33,8 @@ require_once 'Zend/Http/Header/HeaderValue.php';
  *
  * @package    Zend_Http
  * @subpackage Response
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Http_Response
 {
@@ -420,7 +420,7 @@ class Zend_Http_Response
      * Returns array of all codes, if $code is not specified.
      *
      * Conforms to HTTP/1.1 as defined in RFC 2616 (except for 'Unknown')
-     * See http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10 for reference
+     * See https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html#sec10 for reference
      *
      * @param int $code HTTP response code
      * @param boolean $http11 Use HTTP version 1.1
@@ -674,7 +674,7 @@ class Zend_Http_Response
          *
          * This method was adapted from PEAR HTTP_Request2 by (c) Alexey Borzov
          *
-         * @link http://framework.zend.com/issues/browse/ZF-6040
+         * @link https://framework.zend.com/issues/browse/ZF-6040
          */
         $zlibHeader = unpack('n', substr($body, 0, 2));
         if ($zlibHeader[1] % 31 == 0 && ord($body[0]) == 0x78 && in_array(ord($body[1]), array(0x01, 0x5e, 0x9c, 0xda))) {

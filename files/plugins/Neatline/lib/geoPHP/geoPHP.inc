@@ -292,7 +292,7 @@ class geoPHP
     }
 
     // What do you get when you cross an elephant with a rhino?
-    // http://youtu.be/RCBn5J83Poc
+    // https://youtu.be/RCBn5J83Poc
     return FALSE;
   }
 

@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -205,14 +205,14 @@ class Image_XMP
 			// If we find an APP1 header,
 			if (strcmp($jpeg_header_data[$i]['SegName'], 'APP1') == 0)
 			{
-				// And if it has the Adobe XMP/RDF label (http://ns.adobe.com/xap/1.0/\x00) ,
-				if (strncmp($jpeg_header_data[$i]['SegData'], 'http://ns.adobe.com/xap/1.0/'."\x00", 29) == 0)
+				// And if it has the Adobe XMP/RDF label (https://ns.adobe.com/xap/1.0/\x00) ,
+				if (strncmp($jpeg_header_data[$i]['SegData'], 'https://ns.adobe.com/xap/1.0/'."\x00", 29) == 0)
 				{
 					// Found a XMP/RDF block
 					// Return the XMP text
 					$xmp_data = substr($jpeg_header_data[$i]['SegData'], 29);
 
-					return trim($xmp_data); // trim() should not be neccesary, but some files found in the wild with null-terminated block (known samples from Apple Aperture) causes problems elsewhere (see http://www.getid3.org/phpBB3/viewtopic.php?f=4&t=1153)
+					return trim($xmp_data); // trim() should not be neccesary, but some files found in the wild with null-terminated block (known samples from Apple Aperture) causes problems elsewhere (see https://www.getid3.org/phpBB3/viewtopic.php?f=4&t=1153)
 				}
 			}
 		}

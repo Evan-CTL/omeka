@@ -6,7 +6,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -65,7 +65,7 @@ var mozL10n = document.mozL10n || document.webL10n;
 // optimised CSS custom property getter/setter
 var CustomStyle = (function CustomStyleClosure() {
 
-  // As noted on: http://www.zachstronaut.com/posts/2009/02/17/
+  // As noted on: https://www.zachstronaut.com/posts/2009/02/17/
   //              animate-css-transforms-firefox-webkit.html
   // in some versions of IE9 it is critical that ms appear in this list
   // before Moz
@@ -1957,7 +1957,7 @@ var PresentationMode = {
   mouseMove: function presentationModeMouseMove(evt) {
     // Workaround for a bug in WebKit browsers that causes the 'mousemove' event
     // to be fired when the cursor is changed. For details, see:
-    // http://code.google.com/p/chromium/issues/detail?id=103041.
+    // https://code.google.com/p/chromium/issues/detail?id=103041.
 
     var currCoords = { x: evt.clientX, y: evt.clientY };
     var prevCoords = PresentationMode.prevCoords;
@@ -2019,7 +2019,7 @@ var PresentationMode = {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -2213,7 +2213,7 @@ var GrabToPan = (function GrabToPanClosure() {
    */
   function isLeftMouseReleased(event) {
     if ('buttons' in event && isNotIEorIsIE10plus) {
-      // http://www.w3.org/TR/DOM-Level-3-Events/#events-MouseEvent-buttons
+      // https://www.w3.org/TR/DOM-Level-3-Events/#events-MouseEvent-buttons
       // Firefox 15+
       // Internet Explorer 10+
       return !(event.buttons | 1);
@@ -2600,7 +2600,7 @@ var DocumentProperties = {
 
   parseDate: function documentPropertiesParseDate(inputDate) {
     // This is implemented according to the PDF specification (see
-    // http://www.gnupdf.org/Date for an overview), but note that 
+    // https://www.gnupdf.org/Date for an overview), but note that 
     // Adobe Reader doesn't handle changing the date to universal time
     // and doesn't use the user's time zone (they're effectively ignoring
     // the HH' and mm' parts of the date string).

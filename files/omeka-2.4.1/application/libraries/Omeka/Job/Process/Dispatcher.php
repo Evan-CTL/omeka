@@ -1,7 +1,7 @@
 <?php
 /**
  * @copyright Roy Rosenzweig Center for History and New Media, 2009
- * @license http://www.gnu.org/licenses/gpl-3.0.txt
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt
  * @package Omeka
  * @subpackage Models
  */
@@ -150,7 +150,7 @@ class Omeka_Job_Process_Dispatcher
     /**
      * Launch a background process, returning control to the foreground.
      *
-     * @link http://www.php.net/manual/en/ref.exec.php#70135
+     * @link https://www.php.net/manual/en/ref.exec.php#70135
      */
     static private function _fork($command)
     {

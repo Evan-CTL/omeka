@@ -7,7 +7,7 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
@@ -15,8 +15,8 @@
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Management
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
@@ -82,8 +82,8 @@ require_once 'Zend/Xml/Security.php';
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Management
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_WindowsAzure_Management_Client
 {
@@ -417,7 +417,7 @@ class Zend_Service_WindowsAzure_Management_Client
     /**
      * The List Subscription Operations operation returns a list of create, update,
      * and delete operations that were performed on a subscription during the specified timeframe.
-     * Documentation on the parameters can be found at http://msdn.microsoft.com/en-us/library/gg715318.aspx.
+     * Documentation on the parameters can be found at https://msdn.microsoft.com/en-us/library/gg715318.aspx.
      *
      * @param string $startTime The start of the timeframe to begin listing subscription operations in UTC format. This parameter and the $endTime parameter indicate the timeframe to retrieve subscription operations. This parameter cannot indicate a start date of more than 90 days in the past.
      * @param string $endTime The end of the timeframe to begin listing subscription operations in UTC format. This parameter and the $startTime parameter indicate the timeframe to retrieve subscription operations. 
@@ -484,7 +484,7 @@ class Zend_Service_WindowsAzure_Management_Client
 		    	$xmlOperation->registerXPathNamespace('__empty_ns', $namespaces['']); 
 		    	$xmlParameters = $xmlOperation->xpath('.//__empty_ns:OperationParameter');
 		    	foreach ($xmlParameters as $xmlParameter) {
-		    		$xmlParameterDetails = $xmlParameter->children('http://schemas.datacontract.org/2004/07/Microsoft.Samples.WindowsAzure.ServiceManagement');
+		    		$xmlParameterDetails = $xmlParameter->children('https://schemas.datacontract.org/2004/07/Microsoft.Samples.WindowsAzure.ServiceManagement');
 		    		$operation->addOperationParameter((string)$xmlParameterDetails->Name, (string)$xmlParameterDetails->Value);
 		    	}
 		    	
@@ -745,7 +745,7 @@ class Zend_Service_WindowsAzure_Management_Client
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml'),
     		'<?xml version="1.0" encoding="utf-8"?>
-             <RegenerateKeys xmlns="http://schemas.microsoft.com/windowsazure">
+             <RegenerateKeys xmlns="https://schemas.microsoft.com/windowsazure">
                <KeyType>' . ucfirst($key) . '</KeyType>
              </RegenerateKeys>');
 
@@ -844,7 +844,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest(self::OP_HOSTED_SERVICES, '',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<CreateHostedService xmlns="http://schemas.microsoft.com/windowsazure"><ServiceName>' . $serviceName . '</ServiceName><Label>' . base64_encode($label) . '</Label><Description>' . $description . '</Description>' . $locationOrAffinityGroup . '</CreateHostedService>');
+    		'<CreateHostedService xmlns="https://schemas.microsoft.com/windowsazure"><ServiceName>' . $serviceName . '</ServiceName><Label>' . base64_encode($label) . '</Label><Description>' . $description . '</Description>' . $locationOrAffinityGroup . '</CreateHostedService>');
  	
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -877,7 +877,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest(self::OP_HOSTED_SERVICES . '/' . $serviceName, '',
     		Zend_Http_Client::PUT,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<UpdateHostedService xmlns="http://schemas.microsoft.com/windowsazure"><Label>' . base64_encode($label) . '</Label><Description>' . $description . '</Description></UpdateHostedService>');
+    		'<UpdateHostedService xmlns="https://schemas.microsoft.com/windowsazure"><Label>' . base64_encode($label) . '</Label><Description>' . $description . '</Description></UpdateHostedService>');
  	
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -1018,7 +1018,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest($operationUrl, '',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<CreateDeployment xmlns="http://schemas.microsoft.com/windowsazure"><Name>' . $name . '</Name><PackageUrl>' . $packageUrl . '</PackageUrl><Label>' . base64_encode($label) . '</Label><Configuration>' . base64_encode($conformingConfiguration) . '</Configuration><StartDeployment>' . ($startDeployment ? 'true' : 'false') . '</StartDeployment><TreatWarningsAsError>' . ($treatWarningsAsErrors ? 'true' : 'false') . '</TreatWarningsAsError></CreateDeployment>');
+    		'<CreateDeployment xmlns="https://schemas.microsoft.com/windowsazure"><Name>' . $name . '</Name><PackageUrl>' . $packageUrl . '</PackageUrl><Label>' . base64_encode($label) . '</Label><Configuration>' . base64_encode($conformingConfiguration) . '</Configuration><StartDeployment>' . ($startDeployment ? 'true' : 'false') . '</StartDeployment><TreatWarningsAsError>' . ($treatWarningsAsErrors ? 'true' : 'false') . '</TreatWarningsAsError></CreateDeployment>');
  	
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -1128,7 +1128,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest($operationUrl, '',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<Swap xmlns="http://schemas.microsoft.com/windowsazure"><Production>' . $productionDeploymentName . '</Production><SourceDeployment>' . $sourceDeploymentName . '</SourceDeployment></Swap>');
+    		'<Swap xmlns="https://schemas.microsoft.com/windowsazure"><Production>' . $productionDeploymentName . '</Production><SourceDeployment>' . $sourceDeploymentName . '</SourceDeployment></Swap>');
     		
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -1266,7 +1266,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest($operationUrl . '/', '?comp=status',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<UpdateDeploymentStatus xmlns="http://schemas.microsoft.com/windowsazure"><Status>' . ucfirst($status) . '</Status></UpdateDeploymentStatus>');
+    		'<UpdateDeploymentStatus xmlns="https://schemas.microsoft.com/windowsazure"><Status>' . ucfirst($status) . '</Status></UpdateDeploymentStatus>');
     		
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -1433,7 +1433,7 @@ class Zend_Service_WindowsAzure_Management_Client
 
 		$xml = Zend_Xml_Security::scan($configuration); 
 		
-		// http://www.php.net/manual/en/simplexmlelement.xpath.php#97818
+		// https://www.php.net/manual/en/simplexmlelement.xpath.php#97818
 		$namespaces = $xml->getDocNamespaces();
 	    $xml->registerXPathNamespace('__empty_ns', $namespaces['']); 
 	
@@ -1536,7 +1536,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest($operationUrl . '/', '?comp=config',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<ChangeConfiguration xmlns="http://schemas.microsoft.com/windowsazure" xmlns:i="http://www.w3.org/2001/XMLSchema-instance"><Configuration>' . base64_encode($conformingConfiguration) . '</Configuration></ChangeConfiguration>');
+    		'<ChangeConfiguration xmlns="https://schemas.microsoft.com/windowsazure" xmlns:i="https://www.w3.org/2001/XMLSchema-instance"><Configuration>' . base64_encode($conformingConfiguration) . '</Configuration></ChangeConfiguration>');
 			 
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -1669,7 +1669,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest($operationUrl . '/', '?comp=upgrade',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<UpgradeDeployment xmlns="http://schemas.microsoft.com/windowsazure"><Mode>' . ucfirst($mode) . '</Mode><PackageUrl>' . $packageUrl . '</PackageUrl><Configuration>' . base64_encode($conformingConfiguration) . '</Configuration><Label>' . base64_encode($label) . '</Label>' . (!is_null($roleToUpgrade) ? '<RoleToUpgrade>' . $roleToUpgrade . '</RoleToUpgrade>' : '') . '</UpgradeDeployment>');		
+    		'<UpgradeDeployment xmlns="https://schemas.microsoft.com/windowsazure"><Mode>' . ucfirst($mode) . '</Mode><PackageUrl>' . $packageUrl . '</PackageUrl><Configuration>' . base64_encode($conformingConfiguration) . '</Configuration><Label>' . base64_encode($label) . '</Label>' . (!is_null($roleToUpgrade) ? '<RoleToUpgrade>' . $roleToUpgrade . '</RoleToUpgrade>' : '') . '</UpgradeDeployment>');		
     		
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -1737,7 +1737,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest($operationUrl . '/', '?comp=walkupgradedomain',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<WalkUpgradeDomain xmlns="http://schemas.microsoft.com/windowsazure"><UpgradeDomain>' . $upgradeDomain . '</UpgradeDomain></WalkUpgradeDomain>');		
+    		'<WalkUpgradeDomain xmlns="https://schemas.microsoft.com/windowsazure"><UpgradeDomain>' . $upgradeDomain . '</UpgradeDomain></WalkUpgradeDomain>');		
 
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -2003,7 +2003,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest($operationUrl, '',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<CertificateFile xmlns="http://schemas.microsoft.com/windowsazure"><Data>' . base64_encode($certificateData) . '</Data><CertificateFormat>' . $certificateFormat . '</CertificateFormat><Password>' . $certificatePassword . '</Password></CertificateFile>');
+    		'<CertificateFile xmlns="https://schemas.microsoft.com/windowsazure"><Data>' . base64_encode($certificateData) . '</Data><CertificateFormat>' . $certificateFormat . '</CertificateFormat><Password>' . $certificatePassword . '</Password></CertificateFile>');
 
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -2119,7 +2119,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest(self::OP_AFFINITYGROUPS, '',
     		Zend_Http_Client::POST,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<CreateAffinityGroup xmlns="http://schemas.microsoft.com/windowsazure"><Name>' . $name . '</Name><Label>' . base64_encode($label) . '</Label><Description>' . $description . '</Description><Location>' . $location . '</Location></CreateAffinityGroup>');	
+    		'<CreateAffinityGroup xmlns="https://schemas.microsoft.com/windowsazure"><Name>' . $name . '</Name><Label>' . base64_encode($label) . '</Label><Description>' . $description . '</Description><Location>' . $location . '</Location></CreateAffinityGroup>');	
     		
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';
@@ -2156,7 +2156,7 @@ class Zend_Service_WindowsAzure_Management_Client
         $response = $this->_performRequest(self::OP_AFFINITYGROUPS . '/' . $name, '',
     		Zend_Http_Client::PUT,
     		array('Content-Type' => 'application/xml; charset=utf-8'),
-    		'<UpdateAffinityGroup xmlns="http://schemas.microsoft.com/windowsazure"><Label>' . base64_encode($label) . '</Label><Description>' . $description . '</Description></UpdateAffinityGroup>');	
+    		'<UpdateAffinityGroup xmlns="https://schemas.microsoft.com/windowsazure"><Label>' . base64_encode($label) . '</Label><Description>' . $description . '</Description></UpdateAffinityGroup>');	
     		
     	if (!$response->isSuccessful()) {
 			require_once 'Zend/Service/WindowsAzure/Management/Exception.php';

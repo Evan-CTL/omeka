@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -204,7 +204,7 @@ class getid3_write_apetag
 	public function CleanAPEtagItemKey($itemkey) {
 		$itemkey = preg_replace("#[^\x20-\x7E]#i", '', $itemkey);
 
-		// http://www.personal.uni-jena.de/~pfk/mpp/sv8/apekey.html
+		// https://www.personal.uni-jena.de/~pfk/mpp/sv8/apekey.html
 		switch (strtoupper($itemkey)) {
 			case 'EAN/UPC':
 			case 'ISBN':

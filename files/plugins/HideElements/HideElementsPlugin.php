@@ -2,7 +2,7 @@
 /**
  * @package HideElements
  * @copyright Copyright 2013, John Flatness
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GPLv3 or any later version
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GPLv3 or any later version
  */
 
 class HideElementsPlugin extends Omeka_Plugin_AbstractPlugin

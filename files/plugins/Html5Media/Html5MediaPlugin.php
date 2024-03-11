@@ -2,7 +2,7 @@
 /**
  * @package Html5Media
  * @copyright Copyright 2012, John Flatness
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GPLv3 or any later version
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GPLv3 or any later version
  */
 
 class Html5MediaPlugin extends Omeka_Plugin_AbstractPlugin

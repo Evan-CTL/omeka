@@ -7,15 +7,15 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
  *
  * @category   Zend
  * @package    Zend_Json
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
@@ -24,8 +24,8 @@
  *
  * @category   Zend
  * @package    Zend_Json
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Json_Encoder
 {
@@ -442,8 +442,8 @@ class Zend_Json_Encoder
      * This algorithm was originally developed for the
      * Solar Framework by Paul M. Jones
      *
-     * @link   http://solarphp.com/
-     * @link   http://svn.solarphp.com/core/trunk/Solar/Json.php
+     * @link   https://solarphp.com/
+     * @link   https://svn.solarphp.com/core/trunk/Solar/Json.php
      * @param  string $value
      * @return string
      */
@@ -467,7 +467,7 @@ class Zend_Json_Encoder
 
                 case (($ord_var_c & 0xE0) == 0xC0):
                     // characters U-00000080 - U-000007FF, mask 110XXXXX
-                    // see http://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
+                    // see https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
                     $char = pack('C*', $ord_var_c, ord($value[$i + 1]));
                     $i += 1;
                     $utf16 = self::_utf82utf16($char);
@@ -476,7 +476,7 @@ class Zend_Json_Encoder
 
                 case (($ord_var_c & 0xF0) == 0xE0):
                     // characters U-00000800 - U-0000FFFF, mask 1110XXXX
-                    // see http://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
+                    // see https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
                     $char = pack('C*', $ord_var_c,
                                  ord($value[$i + 1]),
                                  ord($value[$i + 2]));
@@ -487,7 +487,7 @@ class Zend_Json_Encoder
 
                 case (($ord_var_c & 0xF8) == 0xF0):
                     // characters U-00010000 - U-001FFFFF, mask 11110XXX
-                    // see http://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
+                    // see https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
                     $char = pack('C*', $ord_var_c,
                                  ord($value[$i + 1]),
                                  ord($value[$i + 2]),
@@ -499,7 +499,7 @@ class Zend_Json_Encoder
 
                 case (($ord_var_c & 0xFC) == 0xF8):
                     // characters U-00200000 - U-03FFFFFF, mask 111110XX
-                    // see http://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
+                    // see https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
                     $char = pack('C*', $ord_var_c,
                                  ord($value[$i + 1]),
                                  ord($value[$i + 2]),
@@ -512,7 +512,7 @@ class Zend_Json_Encoder
 
                 case (($ord_var_c & 0xFE) == 0xFC):
                     // characters U-04000000 - U-7FFFFFFF, mask 1111110X
-                    // see http://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
+                    // see https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
                     $char = pack('C*', $ord_var_c,
                                  ord($value[$i + 1]),
                                  ord($value[$i + 2]),
@@ -538,7 +538,7 @@ class Zend_Json_Encoder
      *
      * This method is from the Solar Framework by Paul M. Jones
      *
-     * @link   http://solarphp.com
+     * @link   https://solarphp.com
      * @param string $utf8 UTF-8 character
      * @return string UTF-16 character
      */
@@ -552,19 +552,19 @@ class Zend_Json_Encoder
         switch (strlen($utf8)) {
             case 1:
                 // this case should never be reached, because we are in ASCII range
-                // see: http://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
+                // see: https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
                 return $utf8;
 
             case 2:
                 // return a UTF-16 character from a 2-byte UTF-8 char
-                // see: http://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
+                // see: https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
                 return chr(0x07 & (ord($utf8{0}) >> 2))
                      . chr((0xC0 & (ord($utf8{0}) << 6))
                          | (0x3F & ord($utf8{1})));
 
             case 3:
                 // return a UTF-16 character from a 3-byte UTF-8 char
-                // see: http://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
+                // see: https://www.cl.cam.ac.uk/~mgk25/unicode.html#utf-8
                 return chr((0xF0 & (ord($utf8{0}) << 4))
                          | (0x0F & (ord($utf8{1}) >> 2)))
                      . chr((0xC0 & (ord($utf8{1}) << 6))

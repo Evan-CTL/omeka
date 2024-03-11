@@ -19,9 +19,9 @@
  *   GNU Lesser General Public License for more details.
  *
  *   You should have received a copy of the GNU Lesser General Public License
- *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
- * @license http://opensource.org/licenses/lgpl-license.php GNU Lesser General Public License
+ * @license https://opensource.org/licenses/lgpl-license.php GNU Lesser General Public License
  * @package csstidy
  * @author Florian Schmitz (floele at gmail dot com) 2005-2007
  * @author Brett Zamir (brettz9 at yahoo dot com) 2007
@@ -152,15 +152,15 @@ header('Content-Type: '.$http_accept.'; charset=utf-8');
 if ($http_accept === 'text/html') {
 
 ?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+	"https://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <?php
 } else {
 	
-?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
 <?php
 }
 
-?><html xmlns="http://www.w3.org/1999/xhtml" xml:lang="<?php echo $l; ?>">
+?><html xmlns="https://www.w3.org/1999/xhtml" xml:lang="<?php echo $l; ?>">
 	<head>
 	<meta http-equiv="Content-Type" content="application/xhtml+xml; charset=utf-8" />
 	<title>
@@ -206,7 +206,7 @@ if ($http_accept === 'text/html') {
 		<?php echo $lang[$l][1]; ?>
 	</h1>
 	<?php echo $lang[$l][2]; ?> <a
-		href="http://csstidy.sourceforge.net/">csstidy</a> <?php echo $css->version; ?>)
+		href="https://csstidy.sourceforge.net/">csstidy</a> <?php echo $css->version; ?>)
 	</div><p>
 	<?php echo $lang[$l][39]; ?>: <a hreflang="en" href="?lang=en">English</a> <a hreflang="de" href="?lang=de">Deutsch</a> <a hreflang="fr" href="?lang=fr">French</a> <a hreflang="zh" href="?lang=zh">Chinese</a></p>
 	<p><?php echo $lang[$l][4]; ?>
@@ -365,8 +365,8 @@ if ($http_accept === 'text/html') {
 	}
 
 	if ($url) {
-		if (substr($_REQUEST['url'],0,7) !== 'http://') {
-			$_REQUEST['url'] = 'http://'.$_REQUEST['url'];
+		if (substr($_REQUEST['url'],0,7) !== 'https://') {
+			$_REQUEST['url'] = 'https://'.$_REQUEST['url'];
 		}
 		$result = $css->parse_from_url($_REQUEST['url'],0);
 	} elseif (isset($_REQUEST['css_text']) && strlen($_REQUEST['css_text'])>5) {
@@ -443,7 +443,7 @@ if ($http_accept === 'text/html') {
 	 ?>
 	<p style="text-align:center;font-size:.8em;clear:both">
 		<?php echo $lang[$l][61] ?> <a
-		href="http://csstidy.sourceforge.net/contact.php"><?php echo $lang[$l][62] ?></a>.
+		href="https://csstidy.sourceforge.net/contact.php"><?php echo $lang[$l][62] ?></a>.
 	</p>
 	</body>
 </html>

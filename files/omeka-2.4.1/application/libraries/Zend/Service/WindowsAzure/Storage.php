@@ -7,7 +7,7 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
@@ -15,8 +15,8 @@
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
@@ -42,8 +42,8 @@ require_once 'Zend/Xml/Security.php';
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_WindowsAzure_Storage
 {
@@ -302,9 +302,9 @@ class Zend_Service_WindowsAzure_Storage
 	public function getBaseUrl()
 	{
 		if ($this->_usePathStyleUri) {
-			return 'http://' . $this->_host . '/' . $this->_accountName;
+			return 'https://' . $this->_host . '/' . $this->_accountName;
 		} else {
-			return 'http://' . $this->_accountName . '.' . $this->_host;
+			return 'https://' . $this->_accountName . '.' . $this->_host;
 		}
 	}
 	
@@ -454,7 +454,7 @@ class Zend_Service_WindowsAzure_Storage
 			
 			if (!self::isValidMetadataName($key)) {
                             require_once 'Zend/Service/WindowsAzure/Exception.php';
-                            throw new Zend_Service_WindowsAzure_Exception('Metadata name does not adhere to metadata naming conventions. See http://msdn.microsoft.com/en-us/library/aa664670(VS.71).aspx for more information.');
+                            throw new Zend_Service_WindowsAzure_Exception('Metadata name does not adhere to metadata naming conventions. See https://msdn.microsoft.com/en-us/library/aa664670(VS.71).aspx for more information.');
 			}
 			
 		    $headers["x-ms-meta-" . strtolower($key)] = $value;

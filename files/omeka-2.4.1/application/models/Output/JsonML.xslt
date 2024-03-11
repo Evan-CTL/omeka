@@ -6,7 +6,7 @@
 		Modified: 2009-02-14-0927
 
 		Released under an open-source license:
-		http://jsonml.org/License.htm
+		https://jsonml.org/License.htm
 
 		This transformation converts any XML document into JsonML.
 		It omits processing-instructions and comment-nodes.
@@ -15,7 +15,7 @@
 		uncomment the Comment() template.
 -->
 <xsl:stylesheet version="1.0"
-				xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+				xmlns:xsl="https://www.w3.org/1999/XSL/Transform">
 
 	<xsl:output method="text"
 				media-type="application/json"
@@ -25,7 +25,7 @@
 
 	<!-- constants -->
 	<xsl:variable name="XHTML"
-				  select="'http://www.w3.org/1999/xhtml'" />
+				  select="'https://www.w3.org/1999/xhtml'" />
 
 	<xsl:variable name="START_ELEM"
 				  select="'['" />

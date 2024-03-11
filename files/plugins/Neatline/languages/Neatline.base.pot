@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Neatline\n"
-"Report-Msgid-Bugs-To: http://github.com/scholarslab/Neatline/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/scholarslab/Neatline/issues\n"
 "POT-Creation-Date: 2012-07-26 11:45-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"

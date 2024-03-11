@@ -5,7 +5,7 @@
  *
  * @author Paul Annesley
  * @package Pheanstalk
- * @licence http://www.opensource.org/licenses/mit-license.php
+ * @licence https://www.opensource.org/licenses/mit-license.php
  */
 abstract class Pheanstalk_Command_AbstractCommand
     implements Pheanstalk_Command

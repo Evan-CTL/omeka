@@ -6,7 +6,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -36,7 +36,7 @@ PDFJS.build = '1694cd8';
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -328,7 +328,7 @@ function isValidUrl(url, allowRelative) {
   if (!url) {
     return false;
   }
-  // RFC 3986 (http://tools.ietf.org/html/rfc3986#section-3.1)
+  // RFC 3986 (https://tools.ietf.org/html/rfc3986#section-3.1)
   // scheme = ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
   var protocol = /^[a-z][a-z0-9+\-.]*(?=:)/i.exec(url);
   if (!protocol) {
@@ -3092,7 +3092,7 @@ function addContextCurrentTransform(ctx) {
     Object.defineProperty(ctx, 'mozCurrentTransformInverse', {
       get: function getCurrentTransformInverse() {
         // Calculation done using WolframAlpha:
-        // http://www.wolframalpha.com/input/?
+        // https://www.wolframalpha.com/input/?
         //   i=Inverse+{{a%2C+c%2C+e}%2C+{b%2C+d%2C+f}%2C+{0%2C+0%2C+1}}
 
         var m = this._transformMatrix;

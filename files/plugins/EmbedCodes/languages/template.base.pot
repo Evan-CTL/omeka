@@ -7,7 +7,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: EmbedCodes\n"
-"Report-Msgid-Bugs-To: http://github.com/omeka/plugin-EmbedCodes/issues\n"
+"Report-Msgid-Bugs-To: https://github.com/omeka/plugin-EmbedCodes/issues\n"
 "POT-Creation-Date: 2012-01-09 21:49-0500\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"

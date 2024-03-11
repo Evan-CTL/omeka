@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -148,7 +148,7 @@ class getid3_apetag extends getid3_handler
 			}
 
 			switch (strtolower($item_key)) {
-				// http://wiki.hydrogenaud.io/index.php?title=ReplayGain#MP3Gain
+				// https://wiki.hydrogenaud.io/index.php?title=ReplayGain#MP3Gain
 				case 'replaygain_track_gain':
 					if (preg_match('#^[\\-\\+][0-9\\.,]{8}$#', $thisfile_ape_items_current['data'][0])) {
 						$thisfile_replaygain['track']['adjustment'] = (float) str_replace(',', '.', $thisfile_ape_items_current['data'][0]); // float casting will see "0,95" as zero!
@@ -251,7 +251,7 @@ class getid3_apetag extends getid3_handler
 				case 'cover art (publisher logo)':
 				case 'cover art (recording)':
 				case 'cover art (studio)':
-					// list of possible cover arts from http://taglib-sharp.sourcearchive.com/documentation/2.0.3.0-2/Ape_2Tag_8cs-source.html
+					// list of possible cover arts from https://taglib-sharp.sourcearchive.com/documentation/2.0.3.0-2/Ape_2Tag_8cs-source.html
 					if (is_array($thisfile_ape_items_current['data'])) {
 						$info['warning'][] = 'APEtag "'.$item_key.'" should be flagged as Binary data, but was incorrectly flagged as UTF-8';
 						$thisfile_ape_items_current['data'] = implode("\x00", $thisfile_ape_items_current['data']);
@@ -336,7 +336,7 @@ class getid3_apetag extends getid3_handler
 	}
 
 	public function parseAPEheaderFooter($APEheaderFooterData) {
-		// http://www.uni-jena.de/~pfk/mpp/sv8/apeheader.html
+		// https://www.uni-jena.de/~pfk/mpp/sv8/apeheader.html
 
 		// shortcut
 		$headerfooterinfo['raw'] = array();
@@ -362,7 +362,7 @@ class getid3_apetag extends getid3_handler
 	public function parseAPEtagFlags($rawflagint) {
 		// "Note: APE Tags 1.0 do not use any of the APE Tag flags.
 		// All are set to zero on creation and ignored on reading."
-		// http://wiki.hydrogenaud.io/index.php?title=Ape_Tags_Flags
+		// https://wiki.hydrogenaud.io/index.php?title=Ape_Tags_Flags
 		$flags['header']            = (bool) ($rawflagint & 0x80000000);
 		$flags['footer']            = (bool) ($rawflagint & 0x40000000);
 		$flags['this_is_header']    = (bool) ($rawflagint & 0x20000000);

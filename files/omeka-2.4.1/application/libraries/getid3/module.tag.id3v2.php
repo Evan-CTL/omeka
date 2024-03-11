@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -789,7 +789,7 @@ class getid3_id3v2 extends getid3_handler
 
 		} elseif ((($id3v2_majorversion == 3) && ($parsedFrame['frame_name'] == 'IPLS')) || // 4.4  IPLS Involved people list (ID3v2.3 only)
 				(($id3v2_majorversion == 2) && ($parsedFrame['frame_name'] == 'IPL'))) {     // 4.4  IPL  Involved people list (ID3v2.2 only)
-			// http://id3.org/id3v2.3.0#sec4.4
+			// https://id3.org/id3v2.3.0#sec4.4
 			//   There may only be one 'IPL' frame in each tag
 			// <Header for 'User defined URL link frame', ID: 'IPL'>
 			// Text encoding     $xx
@@ -804,7 +804,7 @@ class getid3_id3v2 extends getid3_handler
 			$parsedFrame['encoding']   = $this->TextEncodingNameLookup($parsedFrame['encodingid']);
 			$parsedFrame['data_raw']   = (string) substr($parsedFrame['data'], $frame_offset);
 
-			// http://www.getid3.org/phpBB3/viewtopic.php?t=1369
+			// https://www.getid3.org/phpBB3/viewtopic.php?t=1369
 			// "this tag typically contains null terminated strings, which are associated in pairs"
 			// "there are users that use the tag incorrectly"
 			$IPLS_parts = array();
@@ -1946,7 +1946,7 @@ class getid3_id3v2 extends getid3_handler
 			unset($parsedFrame['data']);
 
 		} elseif (($id3v2_majorversion >= 3) && ($parsedFrame['frame_name'] == 'RGAD')) { // Replay Gain Adjustment
-			// http://privatewww.essex.ac.uk/~djmrob/replaygain/file_format_id3v2.html
+			// https://privatewww.essex.ac.uk/~djmrob/replaygain/file_format_id3v2.html
 			//   There may only be one 'RGAD' frame in a tag
 			// <Header for 'Replay Gain Adjustment', ID: 'RGAD'>
 			// Peak Amplitude                      $xx $xx $xx $xx
@@ -1988,7 +1988,7 @@ class getid3_id3v2 extends getid3_handler
 			unset($parsedFrame['data']);
 
 		} elseif (($id3v2_majorversion >= 3) && ($parsedFrame['frame_name'] == 'CHAP')) { // CHAP Chapters frame (ID3v2.3+ only)
-			// http://id3.org/id3v2-chapters-1.0
+			// https://id3.org/id3v2-chapters-1.0
 			// <ID3v2.3 or ID3v2.4 frame header, ID: "CHAP">           (10 bytes)
 			// Element ID      <text string> $00
 			// Start time      $xx xx xx xx
@@ -2084,7 +2084,7 @@ class getid3_id3v2 extends getid3_handler
 
 
 		} elseif (($id3v2_majorversion >= 3) && ($parsedFrame['frame_name'] == 'CTOC')) { // CTOC Chapters Table Of Contents frame (ID3v2.3+ only)
-			// http://id3.org/id3v2-chapters-1.0
+			// https://id3.org/id3v2-chapters-1.0
 			// <ID3v2.3 or ID3v2.4 frame header, ID: "CTOC">           (10 bytes)
 			// Element ID      <text string> $00
 			// CTOC flags        %xx
@@ -2623,7 +2623,7 @@ class getid3_id3v2 extends getid3_handler
 			$languagecode = strtolower($languagecode);
 		}
 
-		// http://www.id3.org/id3v2.4.0-structure.txt
+		// https://www.id3.org/id3v2.4.0-structure.txt
 		// [4.   ID3v2 frame overview]
 		// The three byte language field, present in several frames, is used to
 		// describe the language of the frame's content, according to ISO-639-2
@@ -2631,7 +2631,7 @@ class getid3_id3v2 extends getid3_handler
 		// language is not known the string "XXX" should be used.
 
 
-		// ISO 639-2 - http://www.id3.org/iso639-2.html
+		// ISO 639-2 - https://www.id3.org/iso639-2.html
 
 		$begin = __LINE__;
 
@@ -3374,7 +3374,7 @@ class getid3_id3v2 extends getid3_handler
 
 		// Last three:
 		// from Helium2 [www.helium2.com]
-		// from http://privatewww.essex.ac.uk/~djmrob/replaygain/file_format_id3v2.html
+		// from https://privatewww.essex.ac.uk/~djmrob/replaygain/file_format_id3v2.html
 	}
 
 
@@ -3558,7 +3558,7 @@ class getid3_id3v2 extends getid3_handler
 	}
 
 	public static function TextEncodingTerminatorLookup($encoding) {
-		// http://www.id3.org/id3v2.4.0-structure.txt
+		// https://www.id3.org/id3v2.4.0-structure.txt
 		// Frames that allow different types of text encoding contains a text encoding description byte. Possible encodings:
 		static $TextEncodingTerminatorLookup = array(
 			0   => "\x00",     // $00  ISO-8859-1. Terminated with $00.
@@ -3571,7 +3571,7 @@ class getid3_id3v2 extends getid3_handler
 	}
 
 	public static function TextEncodingNameLookup($encoding) {
-		// http://www.id3.org/id3v2.4.0-structure.txt
+		// https://www.id3.org/id3v2.4.0-structure.txt
 		// Frames that allow different types of text encoding contains a text encoding description byte. Possible encodings:
 		static $TextEncodingNameLookup = array(
 			0   => 'ISO-8859-1', // $00  ISO-8859-1. Terminated with $00.

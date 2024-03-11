@@ -3,7 +3,7 @@
  * Docs Viewer
  * 
  * @copyright Copyright 2007-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
 /**
@@ -11,7 +11,7 @@
  */
 class DocsViewer_View_Helper_DocsViewer extends Zend_View_Helper_Abstract
 {
-    // http://docs.google.com/support/bin/answer.py?hl=en&answer=1189935
+    // https://docs.google.com/support/bin/answer.py?hl=en&answer=1189935
     protected $_supportedFiles = array(
         'doc', 'docx', // Microsoft Word
         'ppt', 'pptx', // Microsoft PowerPoint

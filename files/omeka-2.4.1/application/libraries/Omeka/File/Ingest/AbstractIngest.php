@@ -3,7 +3,7 @@
  * Omeka
  * 
  * @copyright Copyright 2007-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
 /**
@@ -23,7 +23,7 @@
  * 
  * <code>
  * $ingest = Omeka_File_Ingest_AbstractIngest::factory('Url', $item);
- * $fileRecords = $ingest->ingest('http://www.example.com');
+ * $fileRecords = $ingest->ingest('https://www.example.com');
  * </code>
  * 
  * @package Omeka\File\Ingest

@@ -4,8 +4,8 @@
  * Copyright 2009, Moxiecode Systems AB
  * Released under LGPL License.
  *
- * License: http://tinymce.moxiecode.com/license
- * Contributing: http://tinymce.moxiecode.com/contributing
+ * License: https://tinymce.moxiecode.com/license
+ * Contributing: https://tinymce.moxiecode.com/contributing
  */
 
 (function() {
@@ -22,8 +22,8 @@
 			return {
 				longname : 'Print',
 				author : 'Moxiecode Systems AB',
-				authorurl : 'http://tinymce.moxiecode.com',
-				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/print',
+				authorurl : 'https://tinymce.moxiecode.com',
+				infourl : 'https://wiki.moxiecode.com/index.php/TinyMCE:Plugins/print',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		}

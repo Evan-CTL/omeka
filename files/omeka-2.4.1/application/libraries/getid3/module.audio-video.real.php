@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -180,7 +180,7 @@ class getid3_real extends getid3_handler
 						switch ($thisfile_real_chunks_currentchunk['mime_type']) {
 							case 'video/x-pn-realvideo':
 							case 'video/x-pn-multirate-realvideo':
-								// http://www.freelists.org/archives/matroska-devel/07-2003/msg00010.html
+								// https://www.freelists.org/archives/matroska-devel/07-2003/msg00010.html
 
 								// shortcut
 								$thisfile_real_chunks_currentchunk['video_info'] = array();
@@ -372,7 +372,7 @@ class getid3_real extends getid3_handler
 
 
 	public function ParseOldRAheader($OldRAheaderData, &$ParsedArray) {
-		// http://www.freelists.org/archives/matroska-devel/07-2003/msg00010.html
+		// https://www.freelists.org/archives/matroska-devel/07-2003/msg00010.html
 
 		$ParsedArray = array();
 		$ParsedArray['magic'] = substr($OldRAheaderData, 0, 4);
@@ -488,8 +488,8 @@ class getid3_real extends getid3_handler
 	public function RealAudioCodecFourCClookup($fourcc, $bitrate) {
 		static $RealAudioCodecFourCClookup = array();
 		if (empty($RealAudioCodecFourCClookup)) {
-			// http://www.its.msstate.edu/net/real/reports/config/tags.stats
-			// http://www.freelists.org/archives/matroska-devel/06-2003/fullthread18.html
+			// https://www.its.msstate.edu/net/real/reports/config/tags.stats
+			// https://www.freelists.org/archives/matroska-devel/06-2003/fullthread18.html
 
 			$RealAudioCodecFourCClookup['14_4'][8000]  = 'RealAudio v2 (14.4kbps)';
 			$RealAudioCodecFourCClookup['14.4'][8000]  = 'RealAudio v2 (14.4kbps)';

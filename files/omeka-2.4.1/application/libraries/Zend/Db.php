@@ -8,15 +8,15 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
  *
  * @category   Zend
  * @package    Zend_Db
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
@@ -26,8 +26,8 @@
  *
  * @category   Zend
  * @package    Zend_Db
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Db
 {
@@ -250,7 +250,7 @@ class Zend_Db
             unset($config['adapterNamespace']);
         }
 
-        // Adapter no longer normalized- see http://framework.zend.com/issues/browse/ZF-5606
+        // Adapter no longer normalized- see https://framework.zend.com/issues/browse/ZF-5606
         $adapterName = $adapterNamespace . '_';
         $adapterName .= str_replace(' ', '_', ucwords(str_replace('_', ' ', strtolower($adapter))));
 

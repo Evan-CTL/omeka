@@ -4,12 +4,12 @@
  * Pheanstalk is a pure PHP 5.2+ client for the beanstalkd workqueue.
  * The Pheanstalk class is a simple facade for the various underlying components.
  *
- * @see http://github.com/kr/beanstalkd
- * @see http://xph.us/software/beanstalkd/
+ * @see https://github.com/kr/beanstalkd
+ * @see https://xph.us/software/beanstalkd/
  *
  * @author Paul Annesley
  * @package Pheanstalk
- * @licence http://www.opensource.org/licenses/mit-license.php
+ * @licence https://www.opensource.org/licenses/mit-license.php
  */
 class Pheanstalk_Pheanstalk implements Pheanstalk_PheanstalkInterface
 {

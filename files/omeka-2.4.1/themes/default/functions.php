@@ -6,7 +6,7 @@
  *
  * @param string $color
  * @param int $steps
- * @link http://stackoverflow.com/questions/3512311/how-to-generate-lighter-darker-color-with-php
+ * @link https://stackoverflow.com/questions/3512311/how-to-generate-lighter-darker-color-with-php
  */
 function thanksroy_brighten($color, $steps) {
     $steps = max(-255, min(255, $steps));

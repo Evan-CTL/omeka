@@ -4,8 +4,8 @@
  * Copyright 2009, Moxiecode Systems AB
  * Released under LGPL License.
  *
- * License: http://tinymce.moxiecode.com/license
- * Contributing: http://tinymce.moxiecode.com/contributing
+ * License: https://tinymce.moxiecode.com/license
+ * Contributing: https://tinymce.moxiecode.com/contributing
  */
 
 (function() {
@@ -41,8 +41,8 @@
 			return {
 				longname : 'Fullpage',
 				author : 'Moxiecode Systems AB',
-				authorurl : 'http://tinymce.moxiecode.com',
-				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/fullpage',
+				authorurl : 'https://tinymce.moxiecode.com',
+				infourl : 'https://wiki.moxiecode.com/index.php/TinyMCE:Plugins/fullpage',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		},
@@ -369,7 +369,7 @@
 			if (editor.getParam('fullpage_default_xml_pi'))
 				header += '<?xml version="1.0" encoding="' + editor.getParam('fullpage_default_encoding', 'ISO-8859-1') + '" ?>\n';
 
-			header += editor.getParam('fullpage_default_doctype', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">');
+			header += editor.getParam('fullpage_default_doctype', '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">');
 			header += '\n<html>\n<head>\n';
 
 			if (value = editor.getParam('fullpage_default_title'))

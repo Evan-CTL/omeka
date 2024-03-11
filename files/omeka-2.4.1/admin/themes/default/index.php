@@ -33,7 +33,7 @@ endif; ?>
             <div id="flash">
                 <ul>
                     <li class="success"><?php echo __('A new version of Omeka is available for download.'); ?>
-                    <a href="http://omeka.org/download/"><?php echo __('Upgrade to %s', $latestVersion); ?></a>
+                    <a href="https://omeka.org/download/"><?php echo __('Upgrade to %s', $latestVersion); ?></a>
                     </li>
                 </ul>
             </div>

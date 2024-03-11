@@ -4,8 +4,8 @@
  * Copyright 2009, Moxiecode Systems AB
  * Released under LGPL License.
  *
- * License: http://tinymce.moxiecode.com/license
- * Contributing: http://tinymce.moxiecode.com/contributing
+ * License: https://tinymce.moxiecode.com/license
+ * Contributing: https://tinymce.moxiecode.com/contributing
  */
 
 (function() {
@@ -16,8 +16,8 @@
 			return {
 				longname : 'Spellchecker',
 				author : 'Moxiecode Systems AB',
-				authorurl : 'http://tinymce.moxiecode.com',
-				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/spellchecker',
+				authorurl : 'https://tinymce.moxiecode.com',
+				infourl : 'https://wiki.moxiecode.com/index.php/TinyMCE:Plugins/spellchecker',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		},
@@ -201,7 +201,7 @@
 		},
 
 		_getSeparators : function() {
-			var re = '', i, str = this.editor.getParam('spellchecker_word_separator_chars', '\\s!"#$%&()*+,-./:;<=>?@[\]^_{|}§©«®±¶·¸»¼½¾¿×÷¤\u201d\u201c');
+			var re = '', i, str = this.editor.getParam('spellchecker_word_separator_chars', '\\s!"#$%&()*+,-./:;<=>?@[\]^_{|}ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½\u201d\u201c');
 
 			// Build word separator regexp
 			for (i=0; i<str.length; i++)

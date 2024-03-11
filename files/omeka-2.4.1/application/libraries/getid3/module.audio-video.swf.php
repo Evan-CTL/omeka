@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -25,7 +25,7 @@ class getid3_swf extends getid3_handler
 		$info['fileformat']          = 'swf';
 		$info['video']['dataformat'] = 'swf';
 
-		// http://www.openswf.org/spec/SWFfileformat.html
+		// https://www.openswf.org/spec/SWFfileformat.html
 
 		$this->fseek($info['avdataoffset']);
 
@@ -72,7 +72,7 @@ class getid3_swf extends getid3_handler
 		$info['swf']['header']['frame_width']  = getid3_lib::Bin2Dec($X2);
 		$info['swf']['header']['frame_height'] = getid3_lib::Bin2Dec($Y2);
 
-		// http://www-lehre.informatik.uni-osnabrueck.de/~fbstark/diplom/docs/swf/Flash_Uncovered.htm
+		// https://www-lehre.informatik.uni-osnabrueck.de/~fbstark/diplom/docs/swf/Flash_Uncovered.htm
 		// Next in the header is the frame rate, which is kind of weird.
 		// It is supposed to be stored as a 16bit integer, but the first byte
 		// (or last depending on how you look at it) is completely ignored.

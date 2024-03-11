@@ -2,11 +2,11 @@
 Test @import directive
 --CSS--
 @import url('../thematic/library/styles/reset.css');
-@namespace foo url("http://www.example.com/");
+@namespace foo url("https://www.example.com/");
 @charset "Shift-JIS";
 
 /* Based on the original Style Sheet for the fisubsilver v2 Theme for phpBB version 2+
-Edited by Daz  - http://www.forumimages.com - last updated 26-06-03 */
+Edited by Daz  - https://www.forumimages.com - last updated 26-06-03 */
 /* The content of the posts (body of text) */
 /* General page style */
 
@@ -17,7 +17,7 @@ Edited by Daz  - http://www.forumimages.com - last updated 26-06-03 */
 --PRINT--
 @charset "Shift-JIS";
 @import "../thematic/library/styles/reset.css";
-@namespace foo "http://www.example.com/";
+@namespace foo "https://www.example.com/";
 @media screen {
 .float-l{float:left}
 }

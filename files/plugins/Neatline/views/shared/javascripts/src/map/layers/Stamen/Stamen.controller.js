@@ -3,7 +3,7 @@
  * @package     omeka
  * @subpackage  neatline
  * @copyright   2014 Rector and Board of Visitors, University of Virginia
- * @license     http://www.apache.org/licenses/LICENSE-2.0.html
+ * @license     https://www.apache.org/licenses/LICENSE-2.0.html
  */
 
 Neatline.module('Map.Layers.Stamen', function(Stamen) {
@@ -18,7 +18,7 @@ Neatline.module('Map.Layers.Stamen', function(Stamen) {
 
 
     /**
-     * Construct a Stamen layer - http://maps.stamen.com/.
+     * Construct a Stamen layer - https://maps.stamen.com/.
      *
      * @param {Object} json: The layer definition.
      * @return {OpenLayers.Layer.Stamen}: The Stamen layer.

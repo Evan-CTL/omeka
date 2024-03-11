@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -367,7 +367,7 @@ class getid3_iso extends getid3_handler
 	}
 
 	public function TwosCompliment2Decimal($BinaryValue) {
-		// http://sandbox.mc.edu/~bennet/cs110/tc/tctod.html
+		// https://sandbox.mc.edu/~bennet/cs110/tc/tctod.html
 		// First check if the number is negative or positive by looking at the sign bit.
 		// If it is positive, simply convert it to decimal.
 		// If it is negative, make it positive by inverting the bits and adding one.

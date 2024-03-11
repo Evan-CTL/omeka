@@ -1,4 +1,4 @@
-<DiagnosticMonitorConfiguration xmlns="http://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration" configurationChangePollInterval="PT1M" overallQuotaInMB="4096">
+<DiagnosticMonitorConfiguration xmlns="https://schemas.microsoft.com/ServiceHosting/2010/10/DiagnosticsConfiguration" configurationChangePollInterval="PT1M" overallQuotaInMB="4096">
    <DiagnosticInfrastructureLogs bufferQuotaInMB="10"
       scheduledTransferLogLevelFilter="Error"
       scheduledTransferPeriod="PT1M" />

@@ -7,7 +7,7 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
@@ -15,8 +15,8 @@
  * @category   Zend
  * @package    Zend_Http
  * @subpackage UserAgent
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 
 /**
@@ -28,12 +28,12 @@ require_once 'Zend/Http/UserAgent/Features/Adapter.php';
  * Features adapter utilizing PHP's native browscap support
  *
  * Requires that you have a PHP-compatible version of the browscap.ini, per the
- * instructions at http://php.net/get_browser
+ * instructions at https://php.net/get_browser
  *
  * @package    Zend_Http
  * @subpackage UserAgent
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Http_UserAgent_Features_Adapter_Browscap
     implements Zend_Http_UserAgent_Features_Adapter

@@ -209,7 +209,7 @@ Omeka.Items = {};
         }
 
         // Tokenized input based on
-        // http://jqueryui.com/demos/autocomplete/multiple.html
+        // https://jqueryui.com/demos/autocomplete/multiple.html
         $(inputSelector).autocomplete({
             source: function (request, response) {
                 $.getJSON(tagChoicesUrl, {

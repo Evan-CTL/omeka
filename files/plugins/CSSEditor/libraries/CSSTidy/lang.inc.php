@@ -18,9 +18,9 @@
  *   GNU Lesser General Public License for more details.
  *
  *   You should have received a copy of the GNU Lesser General Public License
- *   along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ *   along with this program.  If not, see <https://www.gnu.org/licenses/>.
  *
- * @license http://opensource.org/licenses/lgpl-license.php GNU Lesser General Public License
+ * @license https://opensource.org/licenses/lgpl-license.php GNU Lesser General Public License
  * @package csstidy
  * @author Florian Schmitz (floele at gmail dot com) 2005-2007
  * @author Brett Zamir (brettz9 at yahoo dot com) 2007
@@ -46,7 +46,7 @@ $lang['en'][1] = 'CSS Formatter and Optimiser';
 $lang['en'][2] = '(based on';
 $lang['en'][3] = '(plaintext)';
 $lang['en'][4] = 'Important Note:';
-$lang['en'][6] = 'Your code should be well-formed. This is <strong>not a validator</strong> which points out errors in your CSS code. To make sure that your code is valid, use the <a href="http://jigsaw.w3.org/css-validator/">W3C Validator</a>.';
+$lang['en'][6] = 'Your code should be well-formed. This is <strong>not a validator</strong> which points out errors in your CSS code. To make sure that your code is valid, use the <a href="https://jigsaw.w3.org/css-validator/">W3C Validator</a>.';
 $lang['en'][7] = 'all comments are removed';
 $lang['en'][8] = 'CSS Input:';
 $lang['en'][9] = 'CSS-Code:';
@@ -58,7 +58,7 @@ $lang['en'][14] = 'High (moderate readability, smaller size)';
 $lang['en'][15] = 'Standard (balance between readability and size)';
 $lang['en'][16] = 'Low (higher readability)';
 $lang['en'][17] = 'Custom (enter below)';
-$lang['en'][18] = 'Custom <a href="http://csstidy.sourceforge.net/templates.php">template</a>';
+$lang['en'][18] = 'Custom <a href="https://csstidy.sourceforge.net/templates.php">template</a>';
 $lang['en'][19] = 'Options';
 $lang['en'][20] = 'Sort Selectors (caution)';
 $lang['en'][21] = 'Sort Properties';
@@ -113,7 +113,7 @@ $lang['de'][1] = 'CSS Formatierer und Optimierer';
 $lang['de'][2] = '(basierend auf';
 $lang['de'][3] = '(Textversion)';
 $lang['de'][4] = 'Wichtiger Hinweis:';
-$lang['de'][6] = 'Der CSS Code sollte wohlgeformt sein. Der CSS Code wird <strong>nicht auf Gültigkeit überprüft</strong>. Um sicherzugehen dass dein Code valide ist, benutze den <a href="http://jigsaw.w3.org/css-validator/">W3C Validierungsservice</a>.';
+$lang['de'][6] = 'Der CSS Code sollte wohlgeformt sein. Der CSS Code wird <strong>nicht auf Gültigkeit überprüft</strong>. Um sicherzugehen dass dein Code valide ist, benutze den <a href="https://jigsaw.w3.org/css-validator/">W3C Validierungsservice</a>.';
 $lang['de'][7] = 'alle Kommentare werden entfernt';
 $lang['de'][8] = 'CSS Eingabe:';
 $lang['de'][9] = 'CSS-Code:';
@@ -125,7 +125,7 @@ $lang['de'][14] = 'Hoch (mittelmäßige Lesbarkeit, geringe Größe)';
 $lang['de'][15] = 'Standard (Kompromiss zwischen Lesbarkeit und Größe)';
 $lang['de'][16] = 'Niedrig (höhere Lesbarkeit)';
 $lang['de'][17] = 'Benutzerdefiniert (unten eingeben)';
-$lang['de'][18] = 'Benutzerdefinierte <a href="http://csstidy.sourceforge.net/templates.php">Vorlage</a>';
+$lang['de'][18] = 'Benutzerdefinierte <a href="https://csstidy.sourceforge.net/templates.php">Vorlage</a>';
 $lang['de'][19] = 'Optionen';
 $lang['de'][20] = 'Selektoren sortieren (Vorsicht)';
 $lang['de'][21] = 'Eigenschaften sortieren';
@@ -180,7 +180,7 @@ $lang['fr'][1] = 'CSS Formateur et Optimiseur';
 $lang['fr'][2] = '(basé sur ';
 $lang['fr'][3] = '(Version texte)';
 $lang['fr'][4] = 'Note Importante&#160;:';
-$lang['fr'][6] = 'Votre code doit être valide. Ce n’est <strong>pas un validateur</strong> qui signale les erreurs dans votre code CSS. Pour être sûr que votre code est correct, utilisez le validateur&#160;: <a href="http://jigsaw.w3.org/css-validator/">W3C Validator</a>.';
+$lang['fr'][6] = 'Votre code doit être valide. Ce n’est <strong>pas un validateur</strong> qui signale les erreurs dans votre code CSS. Pour être sûr que votre code est correct, utilisez le validateur&#160;: <a href="https://jigsaw.w3.org/css-validator/">W3C Validator</a>.';
 $lang['fr'][7] = 'tous les commentaires sont enlevés';
 $lang['fr'][8] = 'Champ CSS&#160;:';
 $lang['fr'][9] = 'Code CSS&#160;:';
@@ -192,7 +192,7 @@ $lang['fr'][14] = 'Élevée (lisibilité modérée, petite taille)';
 $lang['fr'][15] = 'Normale (équilibre entre lisibilité et taille)';
 $lang['fr'][16] = 'Faible (lisibilité élevée)';
 $lang['fr'][17] = 'Sur mesure (entrer ci-dessous)';
-$lang['fr'][18] = '<a href="http://csstidy.sourceforge.net/templates.php">Gabarit</a> sur mesure';
+$lang['fr'][18] = '<a href="https://csstidy.sourceforge.net/templates.php">Gabarit</a> sur mesure';
 $lang['fr'][19] = 'Options';
 $lang['fr'][20] = 'Trier les sélecteurs (attention)';
 $lang['fr'][21] = 'Trier les propriétés';
@@ -247,7 +247,7 @@ $lang['zh'][1] = 'CSS整形與最佳化工具';
 $lang['zh'][2] = '(使用';
 $lang['zh'][3] = '(純文字)';
 $lang['zh'][4] = '重要事項:';
-$lang['zh'][6] = '你的原始碼必須是良構的(well-formed). 這個工具<strong>沒有內建驗證器(validator)</strong>. 驗證器能夠指出你CSS原始碼裡的錯誤. 請使用 <a href="http://jigsaw.w3.org/css-validator/">W3C 驗證器</a>, 確保你的原始碼合乎規範.';
+$lang['zh'][6] = '你的原始碼必須是良構的(well-formed). 這個工具<strong>沒有內建驗證器(validator)</strong>. 驗證器能夠指出你CSS原始碼裡的錯誤. 請使用 <a href="https://jigsaw.w3.org/css-validator/">W3C 驗證器</a>, 確保你的原始碼合乎規範.';
 $lang['zh'][7] = '所有註解都移除了';
 $lang['zh'][8] = 'CSS 輸入:';
 $lang['zh'][9] = 'CSS 原始碼:';
@@ -259,7 +259,7 @@ $lang['zh'][14] = '高 (適度的可讀性, 檔案小)';
 $lang['zh'][15] = '標準 (兼顧可讀性與檔案大小)';
 $lang['zh'][16] = '低 (注重可讀性)';
 $lang['zh'][17] = '自訂 (在下方設定)';
-$lang['zh'][18] = '自訂<a href="http://csstidy.sourceforge.net/templates.php">樣板</a>';
+$lang['zh'][18] = '自訂<a href="https://csstidy.sourceforge.net/templates.php">樣板</a>';
 $lang['zh'][19] = '選項';
 $lang['zh'][20] = '整理選擇符(請謹慎使用)';
 $lang['zh'][21] = '整理屬性';

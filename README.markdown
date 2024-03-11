@@ -4,7 +4,7 @@ This used to be based on `erochest/omeka`, but we needed to upgrade to a newer o
 
 The db.ini looks for database credentials in the default mysql environment variables, and can be set up with a linked mysql container (in dev), or against our database server in prod.
 
-See [Dockerizing Omeka](http://wiki.ccnmtl.columbia.edu/index.php/Docker_-izing_Omeka) for more info.
+See [Dockerizing Omeka](https://wiki.ccnmtl.columbia.edu/index.php/Docker_-izing_Omeka) for more info.
 
 This omeka container needs to be linked to a postfix container and a storage container, and optionally, a mysql container (unless it is set up to connect to a non-docker mysql database).
 
@@ -38,7 +38,7 @@ and run:
 
 `$ docker-compose up`
 
-Then visit `http://localhost:8880/install/install.php` and configure
+Then visit `https://localhost:8880/install/install.php` and configure
 your site. If you run into a message that `mod_rewrite` isn't enabled,
 you may need to manually change the path to `/install/install.php`
 (something seems buggy with omeka's module detection).

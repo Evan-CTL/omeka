@@ -5,7 +5,7 @@
  * Global functions.
  *
  * @copyright Copyright 2007-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  * @package Omeka\Function
  */
 
@@ -1347,7 +1347,7 @@ function get_random_featured_collection()
  */
 function latest_omeka_version()
 {
-    $omekaApiUri = 'http://api.omeka.org/latest-version';
+    $omekaApiUri = 'https://api.omeka.org/latest-version';
     $omekaApiVersion = '0.1';
 
     // Determine if we have already checked for the version lately.
@@ -2843,7 +2843,7 @@ function xml_escape($value)
  * original text will be wrapped with line breaks.
  *
  * @package Omeka\Function\Text
- * @link http://us.php.net/manual/en/function.nl2br.php#73479
+ * @link https://us.php.net/manual/en/function.nl2br.php#73479
  * @param string $str
  * @return string
  */

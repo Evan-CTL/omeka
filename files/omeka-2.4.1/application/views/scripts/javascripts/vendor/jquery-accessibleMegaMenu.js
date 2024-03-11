@@ -5,7 +5,7 @@ Licensed under the Apache License, Version 2.0 (the “License”);
 you may not use this file except in compliance with the License.
 You may obtain a copy of the License at
 
-http://www.apache.org/licenses/LICENSE-2.0
+https://www.apache.org/licenses/LICENSE-2.0
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an “AS IS” BASIS,
@@ -15,18 +15,18 @@ limitations under the License.
 */
 
 /**
- * See <a href="http://jquery.com">http://jquery.com</a>.
+ * See <a href="https://jquery.com">https://jquery.com</a>.
  * @name jquery
  * @class
- * See the jQuery Library  (<a href="http://jquery.com">http://jquery.com</a>) for full details.  This just
+ * See the jQuery Library  (<a href="https://jquery.com">https://jquery.com</a>) for full details.  This just
  * documents the function and classes that are added to jQuery by this plug-in.
  */
 
 /**
- * See <a href="http://jquery.com">http://jquery.com</a>
+ * See <a href="https://jquery.com">https://jquery.com</a>
  * @name fn
  * @class
- * See the jQuery Library  (<a href="http://jquery.com">http://jquery.com</a>) for full details.  This just
+ * See the jQuery Library  (<a href="https://jquery.com">https://jquery.com</a>) for full details.  This just
  * documents the function and classes that are added to jQuery by this plug-in.
  * @memberOf jquery
  */
@@ -815,11 +815,11 @@ limitations under the License.
      * @class accessibleMegaMenu
      * @memberOf jQuery.fn
      * @classdesc Implements an accessible mega menu as a jQuery plugin.
-     * <p>The mega-menu It is modeled after the mega menu on {@link http://adobe.com|adobe.com} but has been simplified for use by others. A brief description of the interaction design choices can be found in a blog post at {@link http://blogs.adobe.com/accessibility/2013/05/adobe-com.html|Mega menu accessibility on adobe.com}.</p>
+     * <p>The mega-menu It is modeled after the mega menu on {@link https://adobe.com|adobe.com} but has been simplified for use by others. A brief description of the interaction design choices can be found in a blog post at {@link https://blogs.adobe.com/accessibility/2013/05/adobe-com.html|Mega menu accessibility on adobe.com}.</p>
      * <h3>Keyboard Accessibility</h3>
-     * <p>The accessible mega menu supports keyboard interaction modeled after the behavior described in the {@link http://www.w3.org/TR/wai-aria-practices/#menu|WAI-ARIA Menu or Menu bar (widget) design pattern}, however we also try to respect users' general expectations for the behavior of links in a global navigation. To this end, the accessible mega menu implementation permits tab focus on each of the six top-level menu items. When one of the menu items has focus, pressing the Enter key, Spacebar or Down arrow will open the submenu panel, and pressing the Left or Right arrow key will shift focus to the adjacent menu item. Links within the submenu panels are included in the tab order when the panel is open. They can also be navigated with the arrow keys or by typing the first character in the link name, which speeds up keyboard navigation considerably. Pressing the Escape key closes the submenu and restores focus to the parent menu item.</p>
+     * <p>The accessible mega menu supports keyboard interaction modeled after the behavior described in the {@link https://www.w3.org/TR/wai-aria-practices/#menu|WAI-ARIA Menu or Menu bar (widget) design pattern}, however we also try to respect users' general expectations for the behavior of links in a global navigation. To this end, the accessible mega menu implementation permits tab focus on each of the six top-level menu items. When one of the menu items has focus, pressing the Enter key, Spacebar or Down arrow will open the submenu panel, and pressing the Left or Right arrow key will shift focus to the adjacent menu item. Links within the submenu panels are included in the tab order when the panel is open. They can also be navigated with the arrow keys or by typing the first character in the link name, which speeds up keyboard navigation considerably. Pressing the Escape key closes the submenu and restores focus to the parent menu item.</p>
      * <h3>Screen Reader Accessibility</h3>
-     * <p>The accessible mega menu models its use of WAI-ARIA Roles, States, and Properties after those described in the {@link http://www.w3.org/TR/wai-aria-practices/#menu|WAI-ARIA Menu or Menu bar (widget) design pattern} with some notable exceptions, so that it behaves better with screen reader user expectations for global navigation. We don't use <code class="prettyprint prettyprinted" style=""><span class="pln">role</span><span class="pun">=</span><span class="str">"menu"</span></code> for the menu container and <code class="prettyprint prettyprinted" style=""><span class="pln">role</span><span class="pun">=</span><span class="str">"menuitem"</span></code> for each of the links therein, because if we do, assistive technology will no longer interpret the links as links, but instead, as menu items, and the links in our global navigation will no longer show up when a screen reader user executes a shortcut command to bring up a list of links in the page.</p>
+     * <p>The accessible mega menu models its use of WAI-ARIA Roles, States, and Properties after those described in the {@link https://www.w3.org/TR/wai-aria-practices/#menu|WAI-ARIA Menu or Menu bar (widget) design pattern} with some notable exceptions, so that it behaves better with screen reader user expectations for global navigation. We don't use <code class="prettyprint prettyprinted" style=""><span class="pln">role</span><span class="pun">=</span><span class="str">"menu"</span></code> for the menu container and <code class="prettyprint prettyprinted" style=""><span class="pln">role</span><span class="pun">=</span><span class="str">"menuitem"</span></code> for each of the links therein, because if we do, assistive technology will no longer interpret the links as links, but instead, as menu items, and the links in our global navigation will no longer show up when a screen reader user executes a shortcut command to bring up a list of links in the page.</p>
      * @example <h4>HTML</h4><hr/>
 &lt;nav&gt;
     &lt;ul class=&quot;nav-menu&quot;&gt;
@@ -943,7 +943,7 @@ limitations under the License.
 }
      * @example <h4>JavaScript</h4><hr/>
 &lt;!-- include jquery --&gt;
-&lt;script src=&quot;http://code.jquery.com/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://code.jquery.com/jquery-1.10.1.min.js&quot;&gt;&lt;/script&gt;
 
 &lt;!-- include the jquery-accessibleMegaMenu plugin script --&gt;
 &lt;script src=&quot;js/jquery-accessibleMegaMenu.js&quot;&gt;&lt;/script&gt;

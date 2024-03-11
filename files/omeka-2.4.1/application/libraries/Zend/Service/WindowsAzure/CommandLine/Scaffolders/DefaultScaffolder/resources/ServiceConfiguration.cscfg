@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ServiceConfiguration serviceName="PhpOnAzure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*">
+<ServiceConfiguration serviceName="PhpOnAzure" xmlns="https://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*">
   <Role name="PhpOnAzure.Web">
     <Instances count="1" />
     <ConfigurationSettings>

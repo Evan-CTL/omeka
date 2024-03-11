@@ -2,8 +2,8 @@
 <!DOCTYPE supplementalData SYSTEM "../../common/dtd/ldmlSupplemental.dtd">
 <!--
 Copyright © 1991-2014 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
+CLDR data files are interpreted according to the LDML specification (https://unicode.org/reports/tr35/)
+For terms of use, see https://www.unicode.org/copyright.html
 -->
 
 <supplementalData>
@@ -78,7 +78,7 @@ ldml alternate approvalRequirement approvalRequirements attributeOrder attribute
                 yao yap yav ybb yi yo yue
                 za zap zbl zen zgh zh zu zun zxx zza
             </variable>
-            <!-- start of data generated with CountItems tool per http://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
+            <!-- start of data generated with CountItems tool per https://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
 			<variable id="$grandfathered" type="choice">
 				art-lojban
 				cel-gaulish
@@ -524,7 +524,7 @@ ldml alternate approvalRequirement approvalRequirements attributeOrder attribute
 			<variable id="$variableTop_XXX" type="choice">
 				CODEPOINTS
 			</variable>
-            <!-- end of data generated with CountItems tool per http://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
+            <!-- end of data generated with CountItems tool per https://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
             <variable id="$tzid" type="choice">
                 Africa/Abidjan Africa/Accra Africa/Addis_Ababa Africa/Algiers Africa/Asmera
                 Africa/Bamako Africa/Bangui Africa/Banjul Africa/Bissau Africa/Blantyre
@@ -919,7 +919,7 @@ ldml alternate approvalRequirement approvalRequirements attributeOrder attribute
 			<languageAlias type="him" replacement="srx" reason="macrolanguage"/> <!-- Himachali ⇒ Sirmauri (= Pahari, Himachali) -->
 			<languageAlias type="mnk" replacement="man" reason="macrolanguage"/> <!-- Mandinka ⇒ Mandingo -->
 			<!-- incorrect three-letter language codes -->
-            <!-- start of data generated with CountItems tool per http://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
+            <!-- start of data generated with CountItems tool per https://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
 			<languageAlias type="aar" replacement="aa" reason="overlong"/> <!-- [Afar] -->
 			<languageAlias type="abk" replacement="ab" reason="overlong"/> <!-- [Abkhazian] -->
 			<languageAlias type="ave" replacement="ae" reason="overlong"/> <!-- [Avestan] -->
@@ -1106,7 +1106,7 @@ ldml alternate approvalRequirement approvalRequirements attributeOrder attribute
 			<languageAlias type="zha" replacement="za" reason="overlong"/> <!-- [Zhuang, Chuang] -->
 			<languageAlias type="zho" replacement="zh" reason="overlong"/> <!-- [Chinese] -->
 			<languageAlias type="zul" replacement="zu" reason="overlong"/> <!-- [Zulu] -->
-            <!-- end of data generated with CountItems tool per http://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
+            <!-- end of data generated with CountItems tool per https://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
             <!-- scripts -->
             <scriptAlias type="Qaai" replacement="Zinh" reason="deprecated"/>
             <!-- deprecated ISO territories in 3066 + CLDR ones (older deprecated ISO codes -->
@@ -1149,7 +1149,7 @@ ldml alternate approvalRequirement approvalRequirements attributeOrder attribute
             <territoryAlias type="886" replacement="YE" reason="deprecated"/> <!-- Yemen (pre-1990) -->
             <territoryAlias type="890" replacement="RS ME SI HR MK BA" reason="deprecated"/> <!-- Yugoslavia (pre-1992) -->
             <!-- 3-letter ISO code values -->
-            <!-- start of data generated with CountItems tool per http://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
+            <!-- start of data generated with CountItems tool per https://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
 			<territoryAlias type="AAA" replacement="AA" reason="overlong"/> <!-- Private use -->
 			<territoryAlias type="ASC" replacement="AC" reason="overlong"/> <!-- Ascension Island -->
 			<territoryAlias type="AND" replacement="AD" reason="overlong"/> <!-- Andorra -->
@@ -1756,7 +1756,7 @@ ldml alternate approvalRequirement approvalRequirements attributeOrder attribute
 			<territoryAlias type="180" replacement="CD" reason="overlong"/> <!-- Congo - Kinshasa -->
 			<territoryAlias type="716" replacement="ZW" reason="overlong"/> <!-- Zimbabwe -->
 			<territoryAlias type="999" replacement="ZZ" reason="overlong"/> <!-- Unknown Region -->
-            <!-- end of data generated with CountItems tool per http://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
+            <!-- end of data generated with CountItems tool per https://sites.google.com/site/cldr/development/updating-codes/update-languagescriptregion-subtags -->
             <!-- variants -->
             <variantAlias type="BOKMAL" reason="deprecated"/>
             <variantAlias type="NYNORSK" reason="deprecated"/>

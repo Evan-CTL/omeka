@@ -137,8 +137,8 @@ class Polygon extends getPHP_Collection
 
   /**
    * For a given point, determine whether it's bounded by the given polygon.
-   * Adapted from http://www.assemblysys.com/dataServices/php_pointinpolygon.php
-   * @see http://en.wikipedia.org/wiki/Point%5Fin%5Fpolygon
+   * Adapted from https://www.assemblysys.com/dataServices/php_pointinpolygon.php
+   * @see https://en.wikipedia.org/wiki/Point%5Fin%5Fpolygon
    *
    * @param Point $point 
    * @param boolean $pointOnBoundary - whether a boundary should be considered "in" or not

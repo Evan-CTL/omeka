@@ -341,7 +341,7 @@ document.webL10n = (function(window, document, undefined) {
 
   /**
    * Get rules for plural forms (shared with JetPack), see:
-   * http://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html
+   * https://unicode.org/repos/cldr-tmp/trunk/diff/supplemental/language_plural_rules.html
    * https://github.com/mozilla/addon-sdk/blob/master/python-lib/plural-rules-generator.p
    *
    * @param {string} lang
@@ -974,7 +974,7 @@ document.webL10n = (function(window, document, undefined) {
 
     // get the direction (ltr|rtl) of the current language
     getDirection: function() {
-      // http://www.w3.org/International/questions/qa-scripts
+      // https://www.w3.org/International/questions/qa-scripts
       // Arabic, Hebrew, Farsi, Pashto, Urdu
       var rtlList = ['ar', 'he', 'fa', 'ps', 'ur'];
       return (rtlList.indexOf(gLanguage) >= 0) ? 'rtl' : 'ltr';

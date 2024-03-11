@@ -53,4 +53,4 @@
         <?php echo $this->formText('docsviewer_height_public', get_option('docsviewer_height_public')); ?>
     </div>
 </div>
-<p><?php echo __('By using this service you acknowledge that you have read and agreed to the %sGoogle Docs Viewer Terms of Service%s.', '<a href="http://www.google.com/intl/en/policies/terms/">', '</a>'); ?></p>
+<p><?php echo __('By using this service you acknowledge that you have read and agreed to the %sGoogle Docs Viewer Terms of Service%s.', '<a href="https://www.google.com/intl/en/policies/terms/">', '</a>'); ?></p>

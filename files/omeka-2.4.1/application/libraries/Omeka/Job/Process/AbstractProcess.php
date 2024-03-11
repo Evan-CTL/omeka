@@ -1,7 +1,7 @@
 <?php 
 /**
  * @copyright Roy Rosenzweig Center for History and New Media, 2007-2010
- * @license http://www.gnu.org/licenses/gpl-3.0.txt
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt
  * @package Omeka
  */
 
@@ -9,7 +9,7 @@
  * Base class background processes descend from.
  * 
  * @copyright Roy Rosenzweig Center for History and New Media, 2009
- * @license http://www.gnu.org/licenses/gpl-3.0.txt
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt
  * @package Omeka\Job\Process
  * @subpackage Models
  */ 

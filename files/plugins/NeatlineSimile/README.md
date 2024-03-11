@@ -81,7 +81,7 @@ When lots of records are plotted in close proximity on the timeline, the plottin
 The height of the horizontal "tapes" used to represent duration events on the timeline (events that have both a "Start Date" and an "End Date."
 
   
-[simile]: http://www.simile-widgets.org/timeline/
+[simile]: https://www.simile-widgets.org/timeline/
 [waypoints]: https://github.com/scholarslab/nl-widget-Waypoints
 [iso-8601]: https://en.wikipedia.org/wiki/ISO_8601
 [date-docs]: https://github.com/scholarslab/Neatline/blob/develop/docs/style-tab-dates.md

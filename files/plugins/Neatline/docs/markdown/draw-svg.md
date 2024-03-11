@@ -51,7 +51,7 @@ Once the SVG document is saved off, we can import it into Neatline:
   **Tip**: It's easy to make mistakes when doing this, and it often takes a couple tries to get things right. If you mess up, it's easiest just to totally wipe out the previous attempt by clicking the "Clear all Geometry" button at the bottom of the form.
 
 
-[illustrator]: http://www.adobe.com/products/illustrator.html
-[inkscape]: http://inkscape.org/
-[inkscape-docs]: http://wiki.inkscape.org/wiki/index.php/Inkscape_for_Adobe_Illustrator_users
-[svg-edit]: http://svg-edit.googlecode.com/svn/branches/2.6/editor/svg-editor.html
+[illustrator]: https://www.adobe.com/products/illustrator.html
+[inkscape]: https://inkscape.org/
+[inkscape-docs]: https://wiki.inkscape.org/wiki/index.php/Inkscape_for_Adobe_Illustrator_users
+[svg-edit]: https://svg-edit.googlecode.com/svn/branches/2.6/editor/svg-editor.html

@@ -7,7 +7,7 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
@@ -15,8 +15,8 @@
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
@@ -49,8 +49,8 @@ require_once 'Zend/Service/WindowsAzure/Credentials/SharedKeyLite.php';
  * @category   Zend
  * @package    Zend_Service_WindowsAzure
  * @subpackage Storage
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_Service_WindowsAzure_Storage_Table
     extends Zend_Service_WindowsAzure_Storage_BatchStorageAbstract
@@ -201,9 +201,9 @@ class Zend_Service_WindowsAzure_Storage_Table
 		// Generate request body
 		$requestBody = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>
                         <entry
-                        	xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices"
-                        	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
-                        	xmlns="http://www.w3.org/2005/Atom">
+                        	xmlns:d="https://schemas.microsoft.com/ado/2007/08/dataservices"
+                        	xmlns:m="https://schemas.microsoft.com/ado/2007/08/dataservices/metadata"
+                        	xmlns="https://www.w3.org/2005/Atom">
                           <title />
                           <updated>{tpl:Updated}</updated>
                           <author>
@@ -311,7 +311,7 @@ class Zend_Service_WindowsAzure_Storage_Table
 		                     
 		// Generate request body
 		$requestBody = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-                        <entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://www.w3.org/2005/Atom">
+                        <entry xmlns:d="https://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="https://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="https://www.w3.org/2005/Atom">
                           <title />
                           <updated>{tpl:Updated}</updated>
                           <author>
@@ -349,7 +349,7 @@ class Zend_Service_WindowsAzure_Storage_Table
 		    $timestamp = $result->xpath('//m:properties/d:Timestamp');
 		    $timestamp = $this->_convertToDateTime( (string)$timestamp[0] );
 
-		    $etag      = $result->attributes('http://schemas.microsoft.com/ado/2007/08/dataservices/metadata');
+		    $etag      = $result->attributes('https://schemas.microsoft.com/ado/2007/08/dataservices/metadata');
 		    $etag      = (string)$etag['etag'];
 		    
 		    // Update properties
@@ -385,7 +385,7 @@ class Zend_Service_WindowsAzure_Storage_Table
         // Add header information
         $headers = array();
         if (!$this->isInBatch()) {
-        	// http://social.msdn.microsoft.com/Forums/en-US/windowsazure/thread/9e255447-4dc7-458a-99d3-bdc04bdc5474/
+        	// https://social.msdn.microsoft.com/Forums/en-US/windowsazure/thread/9e255447-4dc7-458a-99d3-bdc04bdc5474/
             $headers['Content-Type']   = 'application/atom+xml';
         }
         $headers['Content-Length'] = 0;
@@ -440,7 +440,7 @@ class Zend_Service_WindowsAzure_Storage_Table
 
 			
 		// Check for combined size of partition key and row key
-		// http://msdn.microsoft.com/en-us/library/dd179421.aspx
+		// https://msdn.microsoft.com/en-us/library/dd179421.aspx
 		if (strlen($partitionKey . $rowKey) >= 256) {
 		    // Start a batch if possible
 		    if ($this->isInBatch()) {
@@ -600,7 +600,7 @@ class Zend_Service_WindowsAzure_Storage_Table
 		    foreach ($entries as $entry) {
     		    // Parse properties
     		    $properties = $entry->xpath('.//m:properties');
-    		    $properties = $properties[0]->children('http://schemas.microsoft.com/ado/2007/08/dataservices');
+    		    $properties = $properties[0]->children('https://schemas.microsoft.com/ado/2007/08/dataservices');
     		    
     		    // Create entity
     		    $entity = new $entityClass('', '');
@@ -609,7 +609,7 @@ class Zend_Service_WindowsAzure_Storage_Table
     		    // If we have a Zend_Service_WindowsAzure_Storage_DynamicTableEntity, make sure all property types are set
     		    if ($entity instanceof Zend_Service_WindowsAzure_Storage_DynamicTableEntity) {
     		        foreach ($properties as $key => $value) {  
-    		            $attributes = $value->attributes('http://schemas.microsoft.com/ado/2007/08/dataservices/metadata');
+    		            $attributes = $value->attributes('https://schemas.microsoft.com/ado/2007/08/dataservices/metadata');
     		            $type = (string)$attributes['type'];
     		            if ($type !== '') {
     		            	$entity->setAzureProperty($key, (string)$value, $type);
@@ -618,7 +618,7 @@ class Zend_Service_WindowsAzure_Storage_Table
     		    }
     
     		    // Update etag
-    		    $etag      = $entry->attributes('http://schemas.microsoft.com/ado/2007/08/dataservices/metadata');
+    		    $etag      = $entry->attributes('https://schemas.microsoft.com/ado/2007/08/dataservices/metadata');
     		    $etag      = (string)$etag['etag'];
     		    $entity->setEtag($etag);
     		    
@@ -737,7 +737,7 @@ class Zend_Service_WindowsAzure_Storage_Table
 
 	    // Generate request body
 		$requestBody = '<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-                        <entry xmlns:d="http://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="http://www.w3.org/2005/Atom">
+                        <entry xmlns:d="https://schemas.microsoft.com/ado/2007/08/dataservices" xmlns:m="https://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns="https://www.w3.org/2005/Atom">
                           <title />
                           <updated>{tpl:Updated}</updated>
                           <author>

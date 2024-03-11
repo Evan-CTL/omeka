@@ -6,8 +6,8 @@
  * @author Edward Z. Yang <admin@htmlpurifier.org>
  *
  * Required
- * unit-tets/Text : http://download.pear.php.net/package/Text_Diff-1.1.1.tgz
- * unit-tests/simpletest/ : http://downloads.sourceforge.net/project/simpletest/simpletest/simpletest_1.0.1/simpletest_1.0.1.tar.gz?r=&ts=1289748853&use_mirror=freefr
+ * unit-tets/Text : https://download.pear.php.net/package/Text_Diff-1.1.1.tgz
+ * unit-tests/simpletest/ : https://downloads.sourceforge.net/project/simpletest/simpletest/simpletest_1.0.1/simpletest_1.0.1.tar.gz?r=&ts=1289748853&use_mirror=freefr
  *
  */
 

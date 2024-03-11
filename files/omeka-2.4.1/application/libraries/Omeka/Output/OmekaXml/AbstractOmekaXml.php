@@ -3,7 +3,7 @@
  * Omeka
  * 
  * @copyright Copyright 2007-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
 /**
@@ -16,17 +16,17 @@ abstract class Omeka_Output_OmekaXml_AbstractOmekaXml
     /**
      * XML Schema instance namespace URI.
      */
-    const XMLNS_XSI            = 'http://www.w3.org/2001/XMLSchema-instance';
+    const XMLNS_XSI            = 'https://www.w3.org/2001/XMLSchema-instance';
     
     /**
      * Omeka-XML namespace URI.
      */
-    const XMLNS                = 'http://omeka.org/schemas/omeka-xml/v5';
+    const XMLNS                = 'https://omeka.org/schemas/omeka-xml/v5';
     
     /**
      * Omeka-XML XML Schema URI.
      */
-    const XMLNS_SCHEMALOCATION = 'http://omeka.org/schemas/omeka-xml/v5/omeka-xml-5-0.xsd';
+    const XMLNS_SCHEMALOCATION = 'https://omeka.org/schemas/omeka-xml/v5/omeka-xml-5-0.xsd';
     
     /**
      * This class' contextual record(s).

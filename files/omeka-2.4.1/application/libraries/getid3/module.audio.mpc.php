@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -62,7 +62,7 @@ class getid3_mpc extends getid3_handler
 
 	public function ParseMPCsv8() {
 		// this is SV8
-		// http://trac.musepack.net/trac/wiki/SV8Specification
+		// https://trac.musepack.net/trac/wiki/SV8Specification
 
 		$info = &$this->getid3->info;
 		$thisfile_mpc_header = &$info['mpc']['header'];
@@ -210,7 +210,7 @@ class getid3_mpc extends getid3_handler
 
 	public function ParseMPCsv7() {
 		// this is SV7
-		// http://www.uni-jena.de/~pfk/mpp/sv8/header.html
+		// https://www.uni-jena.de/~pfk/mpp/sv8/header.html
 
 		$info = &$this->getid3->info;
 		$thisfile_mpc_header = &$info['mpc']['header'];

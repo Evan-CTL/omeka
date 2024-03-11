@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -274,7 +274,7 @@ class getid3_mpeg extends getid3_handler {
 						$GOPheader['closed_gop']         = self::readBitsFromStream($bitstream, $bitstreamoffset,  1); //  1 bit flag: closed_gop
 						$GOPheader['broken_link']        = self::readBitsFromStream($bitstream, $bitstreamoffset,  1); //  1 bit flag: broken_link
 
-						$time_code_separator = ($GOPheader['drop_frame_flag'] ? ';' : ':'); // While non-drop time code is displayed with colons separating the digit pairs—"HH:MM:SS:FF"—drop frame is usually represented with a semi-colon (;) or period (.) as the divider between all the digit pairs—"HH;MM;SS;FF", "HH.MM.SS.FF"
+						$time_code_separator = ($GOPheader['drop_frame_flag'] ? ';' : ':'); // While non-drop time code is displayed with colons separating the digit pairsï¿½"HH:MM:SS:FF"ï¿½drop frame is usually represented with a semi-colon (;) or period (.) as the divider between all the digit pairsï¿½"HH;MM;SS;FF", "HH.MM.SS.FF"
 						$GOPheader['time_code'] = sprintf('%02d'.$time_code_separator.'%02d'.$time_code_separator.'%02d'.$time_code_separator.'%02d', $GOPheader['time_code_hours'], $GOPheader['time_code_minutes'], $GOPheader['time_code_seconds'], $GOPheader['time_code_pictures']);
 
 						$info['mpeg']['group_of_pictures'][] = $GOPheader;
@@ -333,8 +333,8 @@ class getid3_mpeg extends getid3_handler {
 						break;
 					}
 					$ParsedAVchannels[$StartCodeValue] = $StartCodeValue;
-					// http://en.wikipedia.org/wiki/Packetized_elementary_stream
-					// http://dvd.sourceforge.net/dvdinfo/pes-hdr.html
+					// https://en.wikipedia.org/wiki/Packetized_elementary_stream
+					// https://dvd.sourceforge.net/dvdinfo/pes-hdr.html
 /*
 					$PackedElementaryStream = array();
 					if ($StartCodeValue >= 0xE0) {

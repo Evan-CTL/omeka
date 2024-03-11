@@ -11,7 +11,7 @@
 /**
  * PHP Geometry/KML encoder/decoder
  *
- * Mainly inspired/adapted from OpenLayers( http://www.openlayers.org )
+ * Mainly inspired/adapted from OpenLayers( https://www.openlayers.org )
  *   Openlayers/format/WKT.js
  *
  * @package    sfMapFishPlugin

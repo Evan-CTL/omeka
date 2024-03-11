@@ -5,7 +5,7 @@
  *
  * @author Paul Annesley
  * @package Pheanstalk
- * @licence http://www.opensource.org/licenses/mit-license.php
+ * @licence https://www.opensource.org/licenses/mit-license.php
  */
 class Pheanstalk_ClassLoader
 {
@@ -37,7 +37,7 @@ class Pheanstalk_ClassLoader
      * Attempts to load a Pheanstalk class file.
      *
      * @param string $class
-     * @see http://php.net/manual/en/function.spl-autoload-register.php
+     * @see https://php.net/manual/en/function.spl-autoload-register.php
      */
     public static function load($class)
     {

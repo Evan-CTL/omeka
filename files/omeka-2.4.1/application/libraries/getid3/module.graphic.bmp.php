@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -29,7 +29,7 @@ class getid3_bmp extends getid3_handler
 		$thisfile_bmp_header                  = &$thisfile_bmp['header'];
 		$thisfile_bmp_header_raw              = &$thisfile_bmp_header['raw'];
 
-		// BITMAPFILEHEADER [14 bytes] - http://msdn.microsoft.com/library/en-us/gdi/bitmaps_62uq.asp
+		// BITMAPFILEHEADER [14 bytes] - https://msdn.microsoft.com/library/en-us/gdi/bitmaps_62uq.asp
 		// all versions
 		// WORD    bfType;
 		// DWORD   bfSize;
@@ -100,7 +100,7 @@ class getid3_bmp extends getid3_handler
 		if ($thisfile_bmp['type_os'] == 'OS/2') {
 
 			// OS/2-format BMP
-			// http://netghost.narod.ru/gff/graphics/summary/os2bmp.htm
+			// https://netghost.narod.ru/gff/graphics/summary/os2bmp.htm
 
 			// DWORD  Size;             /* Size of this structure in bytes */
 			// DWORD  Width;            /* Bitmap width in pixels */
@@ -176,7 +176,7 @@ class getid3_bmp extends getid3_handler
 
 			// Windows-format BMP
 
-			// BITMAPINFOHEADER - [40 bytes] http://msdn.microsoft.com/library/en-us/gdi/bitmaps_1rw2.asp
+			// BITMAPINFOHEADER - [40 bytes] https://msdn.microsoft.com/library/en-us/gdi/bitmaps_1rw2.asp
 			// all versions
 			// DWORD  biSize;
 			// LONG   biWidth;
@@ -223,7 +223,7 @@ class getid3_bmp extends getid3_handler
 				// should only be v4+, but BMPs with type_version==1 and BI_BITFIELDS compression have been seen
 				$BMPheader .= $this->fread(44);
 
-				// BITMAPV4HEADER - [44 bytes] - http://msdn.microsoft.com/library/en-us/gdi/bitmaps_2k1e.asp
+				// BITMAPV4HEADER - [44 bytes] - https://msdn.microsoft.com/library/en-us/gdi/bitmaps_2k1e.asp
 				// Win95+, WinNT4.0+
 				// DWORD        bV4RedMask;
 				// DWORD        bV4GreenMask;
@@ -265,7 +265,7 @@ class getid3_bmp extends getid3_handler
 			if ($thisfile_bmp['type_version'] >= 5) {
 				$BMPheader .= $this->fread(16);
 
-				// BITMAPV5HEADER - [16 bytes] - http://msdn.microsoft.com/library/en-us/gdi/bitmaps_7c36.asp
+				// BITMAPV5HEADER - [16 bytes] - https://msdn.microsoft.com/library/en-us/gdi/bitmaps_7c36.asp
 				// Win98+, Win2000+
 				// DWORD        bV5Intent;
 				// DWORD        bV5ProfileData;
@@ -300,7 +300,7 @@ class getid3_bmp extends getid3_handler
 				$BMPpalette = $this->fread(4 * $PaletteEntries);
 				$paletteoffset = 0;
 				for ($i = 0; $i < $PaletteEntries; $i++) {
-					// RGBQUAD          - http://msdn.microsoft.com/library/en-us/gdi/bitmaps_5f8y.asp
+					// RGBQUAD          - https://msdn.microsoft.com/library/en-us/gdi/bitmaps_5f8y.asp
 					// BYTE    rgbBlue;
 					// BYTE    rgbGreen;
 					// BYTE    rgbRed;
@@ -412,7 +412,7 @@ class getid3_bmp extends getid3_handler
 					break;
 
 
-				case 1: // BI_RLE8 - http://msdn.microsoft.com/library/en-us/gdi/bitmaps_6x0u.asp
+				case 1: // BI_RLE8 - https://msdn.microsoft.com/library/en-us/gdi/bitmaps_6x0u.asp
 					switch ($thisfile_bmp_header_raw['bits_per_pixel']) {
 						case 8:
 							$pixelcounter = 0;
@@ -488,7 +488,7 @@ class getid3_bmp extends getid3_handler
 
 
 
-				case 2: // BI_RLE4 - http://msdn.microsoft.com/library/en-us/gdi/bitmaps_6x0u.asp
+				case 2: // BI_RLE4 - https://msdn.microsoft.com/library/en-us/gdi/bitmaps_6x0u.asp
 					switch ($thisfile_bmp_header_raw['bits_per_pixel']) {
 						case 4:
 							$pixelcounter = 0;

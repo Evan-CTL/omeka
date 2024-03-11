@@ -42,7 +42,7 @@ class GoogleGeocode extends GeoAdapter
       $bounds_string = '';
     }
     
-    $url = "http://maps.googleapis.com/maps/api/geocode/json";
+    $url = "https://maps.googleapis.com/maps/api/geocode/json";
     $url .= '?address='. urlencode($address);
     $url .= $bounds_string;
     $url .= '&sensor=false';
@@ -94,7 +94,7 @@ class GoogleGeocode extends GeoAdapter
     $lat = $centroid->getY();
     $lon = $centroid->getX();
     
-    $url = "http://maps.googleapis.com/maps/api/geocode/json";
+    $url = "https://maps.googleapis.com/maps/api/geocode/json";
     $url .= '?latlng='.$lat.','.$lon;
     $url .= '&sensor=false';
     $this->result = json_decode(@file_get_contents($url));

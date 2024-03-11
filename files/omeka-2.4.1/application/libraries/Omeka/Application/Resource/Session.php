@@ -3,7 +3,7 @@
  * Omeka
  * 
  * @copyright Copyright 2007-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
 /**
@@ -25,7 +25,7 @@ class Omeka_Application_Resource_Session extends Zend_Application_Resource_Sessi
     /**
      * Retrieve global session configuration options.
      * 
-     * @link http://framework.zend.com/manual/en/zend.session.global_session_management.html#zend.session.global_session_management.configuration_options
+     * @link https://framework.zend.com/manual/en/zend.session.global_session_management.html#zend.session.global_session_management.configuration_options
      * @return array An array containing all the global configuration options 
      * for sessions.  This array contains at least one key, 'name', corresponding
      * to the name of the session, which is generated automatically if not 

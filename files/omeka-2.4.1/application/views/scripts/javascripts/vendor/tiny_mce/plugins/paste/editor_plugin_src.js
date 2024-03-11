@@ -4,8 +4,8 @@
  * Copyright 2009, Moxiecode Systems AB
  * Released under LGPL License.
  *
- * License: http://tinymce.moxiecode.com/license
- * Contributing: http://tinymce.moxiecode.com/contributing
+ * License: https://tinymce.moxiecode.com/license
+ * Contributing: https://tinymce.moxiecode.com/contributing
  */
 
 (function() {
@@ -329,8 +329,8 @@
 			return {
 				longname : 'Paste text/word',
 				author : 'Moxiecode Systems AB',
-				authorurl : 'http://tinymce.moxiecode.com',
-				infourl : 'http://wiki.moxiecode.com/index.php/TinyMCE:Plugins/paste',
+				authorurl : 'https://tinymce.moxiecode.com',
+				infourl : 'https://wiki.moxiecode.com/index.php/TinyMCE:Plugins/paste',
 				version : tinymce.majorVersion + "." + tinymce.minorVersion
 			};
 		},
@@ -423,7 +423,7 @@
 					h = h.replace(/<\/?span[^>]*>/gi, "");
 				} else {
 					// We're keeping styles, so at least clean them up.
-					// CSS Reference: http://msdn.microsoft.com/en-us/library/aa155477.aspx
+					// CSS Reference: https://msdn.microsoft.com/en-us/library/aa155477.aspx
 
 					process([
 						// Convert <span style="mso-spacerun:yes">___</span> to string of alternating breaking/non-breaking spaces of same length

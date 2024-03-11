@@ -7,7 +7,7 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
@@ -15,8 +15,8 @@
  * @category   Zend
  * @package    Zend_View
  * @subpackage Helper
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id$
  */
 
@@ -28,13 +28,13 @@ require_once 'Zend/View/Helper/Navigation/HelperAbstract.php';
 /**
  * Helper for printing sitemaps
  *
- * @link http://www.sitemaps.org/protocol.php
+ * @link https://www.sitemaps.org/protocol.php
  *
  * @category   Zend
  * @package    Zend_View
  * @subpackage Helper
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_View_Helper_Navigation_Sitemap
     extends Zend_View_Helper_Navigation_HelperAbstract
@@ -44,14 +44,14 @@ class Zend_View_Helper_Navigation_Sitemap
      *
      * @var string
      */
-    const SITEMAP_NS = 'http://www.sitemaps.org/schemas/sitemap/0.9';
+    const SITEMAP_NS = 'https://www.sitemaps.org/schemas/sitemap/0.9';
 
     /**
      * Schema URL
      *
      * @var string
      */
-    const SITEMAP_XSD = 'http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd';
+    const SITEMAP_XSD = 'https://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd';
 
     /**
      * Whether the XML declaration should be included in XML output
@@ -176,7 +176,7 @@ class Zend_View_Helper_Navigation_Sitemap
     /**
      * Sets server url (scheme and host-related stuff without request URI)
      *
-     * E.g. http://www.example.com
+     * E.g. https://www.example.com
      *
      * @param  string $serverUrl                    server URL to set (only
      *                                              scheme and host)

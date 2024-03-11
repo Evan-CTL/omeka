@@ -1,8 +1,8 @@
 <?php
 /**
  * @author Bermi Ferrer Martinez <bermi akelos com>
- * @copyright Copyright (c) 2002-2006, Akelos Media, S.L. http://www.akelos.org
- * @license GNU Lesser General Public License <http://www.gnu.org/copyleft/lesser.html>
+ * @copyright Copyright (c) 2002-2006, Akelos Media, S.L. https://www.akelos.org
+ * @license GNU Lesser General Public License <https://www.gnu.org/copyleft/lesser.html>
  * @since 0.1
  * @package Akelos
  */
@@ -13,7 +13,7 @@
 // +----------------------------------------------------------------------+
 // | Akelos PHP Application Framework                                     |
 // +----------------------------------------------------------------------+
-// | Copyright (c) 2002-2006, Akelos Media, S.L.  http://www.akelos.com/  |
+// | Copyright (c) 2002-2006, Akelos Media, S.L.  https://www.akelos.com/  |
 // | Released under the GNU Lesser General Public License                 |
 // +----------------------------------------------------------------------+
 // | You should have received the following files along with this library |
@@ -37,8 +37,8 @@
 * be launched soon.
 * 
 * @author Bermi Ferrer Martinez <bermi akelos com>
-* @copyright Copyright (c) 2002-2006, Akelos Media, S.L. http://www.akelos.org
-* @license GNU Lesser General Public License <http://www.gnu.org/copyleft/lesser.html>
+* @copyright Copyright (c) 2002-2006, Akelos Media, S.L. https://www.akelos.org
+* @license GNU Lesser General Public License <https://www.gnu.org/copyleft/lesser.html>
 * @since 0.1
 */
 class Inflector

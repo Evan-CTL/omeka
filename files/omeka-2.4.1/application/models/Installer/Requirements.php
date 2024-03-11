@@ -3,7 +3,7 @@
  * Omeka
  * 
  * @copyright Copyright 2007-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
 /**
@@ -68,7 +68,7 @@ class Installer_Requirements
             $header = 'Incorrect version of PHP';
             $message = "Omeka requires PHP " . self::OMEKA_PHP_VERSION . " or 
             greater to be installed. PHP " . PHP_VERSION . " is currently 
-            installed. <a href=\"http://www.php.net/manual/en/migration5.php\">Instructions 
+            installed. <a href=\"https://www.php.net/manual/en/migration5.php\">Instructions 
             for upgrading</a> are on the PHP website.";
             $this->_errorMessages[] = compact('header', 'message');
         }
@@ -79,7 +79,7 @@ class Installer_Requirements
         if (!function_exists('mysqli_get_server_info')) {
             $header = 'Mysqli extension is not available';
             $message = "The mysqli PHP extension is required for Omeka to run. 
-            Please check with your server administrator to <a href=\"http://www.php.net/manual/en/mysqli.installation.php\">enable 
+            Please check with your server administrator to <a href=\"https://www.php.net/manual/en/mysqli.installation.php\">enable 
             this extension</a> and then try again.";
             $this->_errorMessages[] = compact('header', 'message');
         }
@@ -92,7 +92,7 @@ class Installer_Requirements
             $header = 'Incorrect version of MySQL';
             $message = "Omeka requires MySQL " . self::OMEKA_MYSQL_VERSION . " 
             or greater to be installed. MySQL $mysqlVersion is currently 
-            installed. <a href=\"http://dev.mysql.com/doc/refman/5.0/en/upgrade.html\">Instructions 
+            installed. <a href=\"https://dev.mysql.com/doc/refman/5.0/en/upgrade.html\">Instructions 
             for upgrading</a> are on the MySQL website.";
             $this->_errorMessages[] = compact('header', 'message');
         }
@@ -112,7 +112,7 @@ class Installer_Requirements
     {
         if (ini_get('register_globals')) {
             $header = '"register_globals" is enabled';
-            $message = "Having PHP's <a href=\"http://www.php.net/manual/en/security.globals.php\">register_globals</a> 
+            $message = "Having PHP's <a href=\"https://www.php.net/manual/en/security.globals.php\">register_globals</a> 
             setting enabled represents a security risk to your Omeka 
             installation. Also, having this setting enabled might indicate that 
             Omeka's .htaccess file is not being properly parsed by Apache, which 
@@ -127,7 +127,7 @@ class Installer_Requirements
     {
         if (!extension_loaded('exif')) {
             $header = '"exif" module not loaded';
-            $message = "Without the <a href=\"http://www.php.net/manual/en/book.exif.php\">exif 
+            $message = "Without the <a href=\"https://www.php.net/manual/en/book.exif.php\">exif 
             module</a> loaded into PHP, Exif data cannot be automatically 
             extracted from uploaded images.";
             $this->_warningMessages[] = compact('header', 'message');
@@ -156,7 +156,7 @@ class Installer_Requirements
         if (!extension_loaded('fileinfo')) {
             $header = '"fileinfo" module not loaded';
             $message = "Without the "
-                     . "<a href=\"http://php.net/manual/en/book.fileinfo.php\"> "
+                     . "<a href=\"https://php.net/manual/en/book.fileinfo.php\"> "
                      . "fileinfo module</a> loaded into PHP, the content type "
                      . "and encoding of uploaded files about cannot be read. "
                      . "The installer will disable file upload validation.";

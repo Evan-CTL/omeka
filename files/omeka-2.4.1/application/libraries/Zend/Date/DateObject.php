@@ -7,24 +7,24 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
  *
  * @category   Zend
  * @package    Zend_Date
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
  * @version    $Id$
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 
 /**
  * @category   Zend
  * @package    Zend_Date
  * @subpackage Zend_Date_DateObject
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 abstract class Zend_Date_DateObject {
 
@@ -314,7 +314,7 @@ abstract class Zend_Date_DateObject {
         if (abs($timestamp) <= 0x7FFFFFFF) {
             // See ZF-11992
             // "o" will sometimes resolve to the previous year (see 
-            // http://php.net/date ; it's part of the ISO 8601 
+            // https://php.net/date ; it's part of the ISO 8601 
             // standard). However, this is not desired, so replacing 
             // all occurrences of "o" not preceded by a backslash 
             // with "Y"
@@ -660,7 +660,7 @@ abstract class Zend_Date_DateObject {
 
     /**
      * Internal getDateParts function for handling 64bit timestamps, similar to:
-     * http://www.php.net/getdate
+     * https://www.php.net/getdate
      *
      * Returns an array of date parts for $timestamp, relative to 1970/01/01 00:00:00 GMT/UTC.
      *
@@ -1004,7 +1004,7 @@ abstract class Zend_Date_DateObject {
 
     /**
      * Sets a new timezone for calculation of $this object's gmt offset.
-     * For a list of supported timezones look here: http://php.net/timezones
+     * For a list of supported timezones look here: https://php.net/timezones
      * If no timezone can be detected or the given timezone is wrong UTC will be set.
      *
      * @param  string  $zone      OPTIONAL timezone for date calculation; defaults to date_default_timezone_get()

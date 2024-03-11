@@ -22,5 +22,5 @@ install`.
 1. `git flow release finish $VERSION`
 1. `git push --all`
 1. `git push --tags`
-1. upload the zip to http://omeka.org/add-ons/plugins/.
+1. upload the zip to https://omeka.org/add-ons/plugins/.
 

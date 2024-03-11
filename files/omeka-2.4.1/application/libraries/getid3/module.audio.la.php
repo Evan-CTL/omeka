@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -208,7 +208,7 @@ class getid3_la extends getid3_handler
 
 			default:
 				if (substr($rawdata, $offset, 2) == 'LA') {
-					$info['error'][] = 'This version of getID3() ['.$this->getid3->version().'] does not support LA version '.substr($rawdata, $offset + 2, 1).'.'.substr($rawdata, $offset + 3, 1).' which this appears to be - check http://getid3.sourceforge.net for updates.';
+					$info['error'][] = 'This version of getID3() ['.$this->getid3->version().'] does not support LA version '.substr($rawdata, $offset + 2, 1).'.'.substr($rawdata, $offset + 3, 1).' which this appears to be - check https://getid3.sourceforge.net for updates.';
 				} else {
 					$info['error'][] = 'Not a LA (Lossless-Audio) file';
 				}

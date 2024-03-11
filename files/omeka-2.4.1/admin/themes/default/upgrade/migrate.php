@@ -28,7 +28,7 @@ endif;
             <pre id="backtrace"><?php echo utf8_htmlspecialchars($exception); ?></pre>
             <p class="instruction">
                 <?php echo __('Please restore from your database backup and try again.'); ?>
-                <?php echo __('If you have any questions please refer to <a href="http://omeka.org/codex">Omeka documentation</a> or post a message on the <a href="http://omeka.org/forums">Omeka forums</a>.'); ?>
+                <?php echo __('If you have any questions please refer to <a href="https://omeka.org/codex">Omeka documentation</a> or post a message on the <a href="https://omeka.org/forums">Omeka forums</a>.'); ?>
             </p>
     <?php endif; ?>
 <?php endif; ?>

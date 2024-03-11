@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE ldml SYSTEM "../../common/dtd/ldml.dtd">
 <!-- Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
-Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Science Association http://ukij.org
+CLDR data files are interpreted according to the LDML specification (https://unicode.org/reports/tr35/)
+For terms of use, see https://www.unicode.org/copyright.html
+Reviewed by Waris Abdukerim Janbaz <oyghan@gmail.com> of the Uyghur Computer Science Association https://ukij.org
 -->
 <ldml>
 	<identity>

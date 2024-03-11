@@ -5,7 +5,7 @@
  * @package     omeka
  * @subpackage  neatline
  * @copyright   2014 Rector and Board of Visitors, University of Virginia
- * @license     http://www.apache.org/licenses/LICENSE-2.0.html
+ * @license     https://www.apache.org/licenses/LICENSE-2.0.html
  */
 
 _.extend(Neatline.Map.View.prototype, {
@@ -126,7 +126,7 @@ _.extend(Neatline.Map.View.prototype, {
 
   /**
    * Apply a settings combination to the controls. Based on:
-   * http://openlayers.org/dev/examples/modify-feature.html
+   * https://openlayers.org/dev/examples/modify-feature.html
    *
    * @param {Object} settings: Settings for the controls.
    */

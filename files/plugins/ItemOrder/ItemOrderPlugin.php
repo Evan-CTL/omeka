@@ -3,7 +3,7 @@
 * ItemOrderPlugin class - represents the Item Order plugin
 *
 * @copyright Copyright 2008-2013 Roy Rosenzweig Center for History and New Media
-* @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+* @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
 * @package ItemOrder
 */
 

@@ -3,20 +3,20 @@ CKEditor 4 - Releases
 
 ## Releases Code
 
-This repository contains the official release versions of [CKEditor](http://ckeditor.com).
+This repository contains the official release versions of [CKEditor](https://ckeditor.com).
 
 There are four versions for each release &mdash; `standard-all`, `basic`, `standard`, and `full`.
 They differ in the number of plugins that are compiled into the main `ckeditor.js` file as well as the toolbar configuration.
 
-See the [comparison](http://ckeditor.com/presets) of the `basic`, `standard`, and `full` installation presets for more details.
+See the [comparison](https://ckeditor.com/presets) of the `basic`, `standard`, and `full` installation presets for more details.
 
 The `standard-all` build includes all official CKSource plugins with only those from the `standard` installation preset compiled into the `ckeditor.js` file and enabled in the configuration. 
 
-All versions available in this repository were built using [CKBuilder](http://ckeditor.com/builder), so they are optimized and ready to be used in a production environment.
+All versions available in this repository were built using [CKBuilder](https://ckeditor.com/builder), so they are optimized and ready to be used in a production environment.
 
 ## Documentation
 
-Developer documentation for CKEditor is available online at: <http://docs.ckeditor.com>.
+Developer documentation for CKEditor is available online at: <https://docs.ckeditor.com>.
 
 ## Installation
 
@@ -29,14 +29,14 @@ To install one of the available releases, just clone this repository and switch 
 ### Git submodule
 
 If you are using git for your project and you want to integrate CKEditor, we recommend to add this repository as a
-[submodule](http://git-scm.com/book/en/Git-Tools-Submodules).
+[submodule](https://git-scm.com/book/en/Git-Tools-Submodules).
 
 	git submodule add -b <release branch> git://github.com/ckeditor/ckeditor-releases.git <clone dir>
 	git commit -m "Added CKEditor submodule in <clone dir> directory."
 
 ### Using Package Managers
 
-See the [Installing CKEditor with Package Managers](http://docs.ckeditor.com/#!/guide/dev_package_managers) article for more details about installing CKEditor with Bower and Composer.
+See the [Installing CKEditor with Package Managers](https://docs.ckeditor.com/#!/guide/dev_package_managers) article for more details about installing CKEditor with Bower and Composer.
 
 ## Repository Structure
 
@@ -58,7 +58,7 @@ This repository contains the following branches:
   - `x.y.z` &ndash; contains the `standard-all` editor build, e.g. `4.3.3`, `4.4.0` etc.
   - `(basic|standard|full)/x.y.z` &ndash; contains the editor build with a given preset, e.g. `basic/4.3.3`.
 
-The version numbers follow the [Semantic Versioning 2.0.0](http://semver.org/) scheme.
+The version numbers follow the [Semantic Versioning 2.0.0](https://semver.org/) scheme.
 
 Up to version **4.3.2** the tags were released in the following form `x.y[.z]/(basic|standard|full)`.
 For example: `4.0/basic`, `4.0.1/standard`. This convention was changed in CKEditor 4.3.3 to conform to the Semantic Versioning scheme.
@@ -69,11 +69,11 @@ The editor comes with a few sample pages that can be used to verify if the insta
 
 To test your installation, just call the following page for your website:
 
-	http://<your site>/<CKEditor installation path>/samples/index.html
+	https://<your site>/<CKEditor installation path>/samples/index.html
 
 For example:
 
-	http://www.example.com/ckeditor/samples/index.html
+	https://www.example.com/ckeditor/samples/index.html
 
 ### License
 

@@ -15,7 +15,7 @@ I see them in Asia and in Africa.
 
 First, create records in the Neatline exhibit for each of the geographic entities that you want to represent on the map - North America, Great Britain, etc. - and fill in the "Slug" field in the "Text" tab with some sort of semantic, easy-to-remember string:
 
-![Slug](http://dclure.org/wp-content/uploads/2014/03/slug.jpg)
+![Slug](https://dclure.org/wp-content/uploads/2014/03/slug.jpg)
 
 Think of the slug as a plain-text, human-readable identifier that can be used to reference the record in other contexts. Like, for instance, attributes in HTML markup! Which brings us to...
 
@@ -36,7 +36,7 @@ In this case we're using `<span>` elements, since we're wrapping little inline s
 
 Once the markup is ready, just paste it into the "Narrative" input in the exhibit's edit form. Be sure to put the text editor in "Source" mode, since we're copying in raw HTML markup:
 
-![Narrative](http://dclure.org/wp-content/uploads/2014/03/narrative.jpg)
+![Narrative](https://dclure.org/wp-content/uploads/2014/03/narrative.jpg)
 
 And that's it. Now, when you open up the exhibit, NeatlineText will automatically wire up bi-directional connections between the spans in the text document and the corresponding records in Neatline. Out of the box, the plugin implements two basic interactions:
 
@@ -54,8 +54,8 @@ There are two ways to go about this:
 
   - **Neatline themes**: The other approach is to use Neatline's exhibit-specific themeing system, which makes it possible to create completely separate themes for each individual Neatline exhibit. For more information about this, check out the documentation, and take a look at [David McClure's fork of the Neatlight theme][neatlight-mcclure], which contains the source code for the custom themes used in projects at [neatline.dclure.org][neatline-dclure]. 
 
-[plugin]: http://omeka.org/add-ons/plugins/neatlinetext
-[salut-au-monde]: http://www.bartelby.com/142/74.html
+[plugin]: https://omeka.org/add-ons/plugins/neatlinetext
+[salut-au-monde]: https://www.bartelby.com/142/74.html
 [neatlight]: https://github.com/scholarslab/neatlight
 [neatlight-mcclure]: https://github.com/davidmcclure/neatlight/tree/master/neatline/exhibits/themes
-[neatline-dclure]: http://neatline.dclure.org
+[neatline-dclure]: https://neatline.dclure.org

@@ -1,9 +1,9 @@
 <h2 id="draw-svg">Draw SVG</h2>
 <p>The standard &quot;Draw Point/Line/Polygon&quot; tools are good for simple, diagrammatic shapes - dots, rectangles, circles, simple arrows, etc. The problem, though, is that they don&#39;t really scale well - what if you want to create a really smooth, intricate shape? Neatline exhibits are always exercises in information design, and there&#39;s a class of &quot;illustrative&quot; annotation that doesn&#39;t fit well into the blocky aesthetic supported by the standard-issue GIS tools. You could painstakingly sketch out complex illustrations using the line and polygon tools, but the resulting geometry is brittle and difficult to maintain. What if you decide later on that you want to change the drawing? You&#39;d have to manually reposition hundreds or thousands of points.</p>
-<p>To address this problem, Neatline 2.0 introduced the &quot;Draw SVG&quot; tool, which makes it possible to create high-fidelity, easily-maintained illustrations in specialized vector editing programs like <a href="http://www.adobe.com/products/illustrator.html">Adobe Illustrator</a> or <a href="http://inkscape.org/">Inkscape</a> (and even in-browser tools like <a href="http://svg-edit.googlecode.com/svn/branches/2.6/editor/svg-editor.html">SVG-Edit</a>) and import them directly into the Neatline editor. This way, you can do the difficult work of vector illustration in tools that are specifically designed for that task, and then drop the final products into Neatline exhibits. Later in, if you want to change something about the drawing, you can just go back to the original source file, make the change, and then update the Neatline exhibit with the new content.</p>
+<p>To address this problem, Neatline 2.0 introduced the &quot;Draw SVG&quot; tool, which makes it possible to create high-fidelity, easily-maintained illustrations in specialized vector editing programs like <a href="https://www.adobe.com/products/illustrator.html">Adobe Illustrator</a> or <a href="https://inkscape.org/">Inkscape</a> (and even in-browser tools like <a href="https://svg-edit.googlecode.com/svn/branches/2.6/editor/svg-editor.html">SVG-Edit</a>) and import them directly into the Neatline editor. This way, you can do the difficult work of vector illustration in tools that are specifically designed for that task, and then drop the final products into Neatline exhibits. Later in, if you want to change something about the drawing, you can just go back to the original source file, make the change, and then update the Neatline exhibit with the new content.</p>
 <p>Neatline reads a commonly-used serialization format called SVG (Scalable Vector Graphics), a form of XML that encodes geometric information. To start, you&#39;ll need to save off your vector file as an SVG document.</p>
 <h3 id="generating-the-svg-document">Generating the SVG document</h3>
-<p>Using <strong><a href="http://www.adobe.com/products/illustrator.html">Adobe Illustrator</a></strong>: </p>
+<p>Using <strong><a href="https://www.adobe.com/products/illustrator.html">Adobe Illustrator</a></strong>: </p>
 <ol>
 <li><p>Click <strong>File</strong> &gt; <strong>Save As</strong>.</p>
 </li>
@@ -14,9 +14,9 @@
 <li><p>Click <strong>OK</strong> to save.</p>
 </li>
 </ol>
-<p>Using <strong><a href="http://inkscape.org/">Inkscape</a></strong>: </p>
+<p>Using <strong><a href="https://inkscape.org/">Inkscape</a></strong>: </p>
 <ol>
-<li><p>Before saving, if you have any text elements in the document, first convert them to raw path elements by selecting them and entering Ctrl+Shift+C (see the <a href="http://wiki.inkscape.org/wiki/index.php/Inkscape_for_Adobe_Illustrator_users">documentation</a> for more inforation.)</p>
+<li><p>Before saving, if you have any text elements in the document, first convert them to raw path elements by selecting them and entering Ctrl+Shift+C (see the <a href="https://wiki.inkscape.org/wiki/index.php/Inkscape_for_Adobe_Illustrator_users">documentation</a> for more inforation.)</p>
 </li>
 <li><p>Click <strong>File</strong> &gt; <strong>Save As</strong>.</p>
 </li>

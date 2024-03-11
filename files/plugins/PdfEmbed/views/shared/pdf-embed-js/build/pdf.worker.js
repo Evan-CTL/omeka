@@ -6,7 +6,7 @@
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -36,7 +36,7 @@ PDFJS.build = '1694cd8';
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -328,7 +328,7 @@ function isValidUrl(url, allowRelative) {
   if (!url) {
     return false;
   }
-  // RFC 3986 (http://tools.ietf.org/html/rfc3986#section-3.1)
+  // RFC 3986 (https://tools.ietf.org/html/rfc3986#section-3.1)
   // scheme = ALPHA *( ALPHA / DIGIT / "+" / "-" / "." )
   var protocol = /^[a-z][a-z0-9+\-.]*(?=:)/i.exec(url);
   if (!protocol) {
@@ -1730,7 +1730,7 @@ var NetworkManager = (function NetworkManagerClosure() {
       }
       var xhrStatus = xhr.status || OK_RESPONSE;
 
-      // From http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35.2:
+      // From https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35.2:
       // "A server MAY ignore the Range header". This means it's possible to
       // get a 200 rather than a 206 response from a range request.
       var ok_response_on_range_request =
@@ -12133,10 +12133,10 @@ var LinkAnnotation = (function LinkAnnotationClosure() {
     }
   }
 
-  // Lets URLs beginning with 'www.' default to using the 'http://' protocol.
+  // Lets URLs beginning with 'www.' default to using the 'https://' protocol.
   function addDefaultProtocolToUrl(url) {
     if (url && url.indexOf('www.') === 0) {
-      return ('http://' + url);
+      return ('https://' + url);
     }
     return url;
   }
@@ -12313,7 +12313,7 @@ var PDFFunction = (function PDFFunctionClosure() {
         var x = args;
 
         // Building the cube vertices: its part and sample index
-        // http://rjwagner49.com/Mathematics/Interpolation.pdf
+        // https://rjwagner49.com/Mathematics/Interpolation.pdf
         var cubeVertices = 1 << m;
         var cubeN = new Float64Array(cubeVertices);
         var cubeVertex = new Uint32Array(cubeVertices);
@@ -13608,7 +13608,7 @@ var CalGrayCS = (function CalGrayCSClosure() {
     // Computes L as per spec. ( = cs.YW * AG )
     // Except if other than default BlackPoint values are used.
     var L = cs.YW * AG;
-    // http://www.poynton.com/notes/colour_and_gamma/ColorFAQ.html, Ch 4.
+    // https://www.poynton.com/notes/colour_and_gamma/ColorFAQ.html, Ch 4.
     // Convert values to rgb range [0, 255].
     var val = Math.max(295.8 * Math.pow(L, 0.333333333333333333) - 40.8, 0) | 0;
     dest[destOffset] = val;
@@ -13740,7 +13740,7 @@ var LabCS = (function LabCSClosure() {
 
     var r, g, b;
     // Using different conversions for D50 and D65 white points,
-    // per http://www.color.org/srgb.pdf
+    // per https://www.color.org/srgb.pdf
     if (cs.ZW < 1) {
       // Assuming D50 (X=0.9642, Y=1.00, Z=0.8249)
       r = X * 3.1339 + Y * -1.6170 + Z * -0.4906;
@@ -25277,7 +25277,7 @@ var CFFStandardStrings = [
 var Type1Font = function Type1Font(name, file, properties) {
   // Some bad generators embed pfb file as is, we have to strip 6-byte headers.
   // Also, length1 and length2 might be off by 6 bytes as well.
-  // http://www.math.ubc.ca/~cass/piscript/type1.pdf
+  // https://www.math.ubc.ca/~cass/piscript/type1.pdf
   var PFB_HEADER_SIZE = 6;
   var headerBlockLength = properties.length1;
   var eexecBlockLength = properties.length2;
@@ -26962,7 +26962,7 @@ var CFFCompiler = (function CFFCompilerClosure() {
 })();
 
 // Workaround for Private Use Area characters in Chrome on Windows
-// http://code.google.com/p/chromium/issues/detail?id=122465
+// https://code.google.com/p/chromium/issues/detail?id=122465
 // https://github.com/mozilla/pdf.js/issues/1689
 (function checkChromeWindows() {
   if (/Windows.*Chrome/.test(navigator.userAgent)) {
@@ -39381,7 +39381,7 @@ if (typeof window === 'undefined') {
 /* This class implements the QM Coder decoding as defined in
  *   JPEG 2000 Part I Final Committee Draft Version 1.0
  *   Annex C.3 Arithmetic decoding procedure 
- * available at http://www.jpeg.org/public/fcd15444-1.pdf
+ * available at https://www.jpeg.org/public/fcd15444-1.pdf
  * 
  * The arithmetic decoder is used in conjunction with context models to decode
  * JPEG2000 and JBIG2 streams.
@@ -43890,7 +43890,7 @@ var bidi = PDFJS.bidi = (function bidiClosure() {
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- *     http://www.apache.org/licenses/LICENSE-2.0
+ *     https://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,

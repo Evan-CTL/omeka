@@ -36,7 +36,7 @@
         sudo pear install PHP_CodeSniffer-1.3.0a1
 
         In addition to these, if you wish to have use the code browser package,
-        please refere to the documentation at http://github.com/mayflowergmbh/PHP_CodeBrowser
+        please refere to the documentation at https://github.com/mayflowergmbh/PHP_CodeBrowser
 
         In short, these are the directions for installing the alpha package
 
@@ -120,7 +120,7 @@
 
         <!--
             This task runs PHP_Depend on your library. For more on usage, see the
-            PHP_Depend Documentation at http://pdepend.org/documentation/getting-started.html
+            PHP_Depend Documentation at https://pdepend.org/documentation/getting-started.html
         -->
 
         <exec executable="pdepend">
@@ -136,7 +136,7 @@
         <!--
             This task creates a report by running the PHP Mess Detector package
             on the source. For more information on the configuration options
-            see http://phpmd.org/documentation/index.html
+            see https://phpmd.org/documentation/index.html
         -->
 
         <exec executable="phpmd">
@@ -148,7 +148,7 @@
 
          <!--
             phpcpd is a light-weight detector of duplicate code. For more information
-            see the documentation at http://github.com/sebastianbergmann/phpcpd
+            see the documentation at https://github.com/sebastianbergmann/phpcpd
          -->
 
         <exec executable="phpcpd">
@@ -159,7 +159,7 @@
     <target name="phpcs" depends="setup" description="Generate a PHP_CodeSniffer report for coding standards">
         <!--
             PHP_CodeSniffer detects violations of coding standards. See 
-            http://pear.php.net/package/PHP_CodeSniffer/docs for usage.
+            https://pear.php.net/package/PHP_CodeSniffer/docs for usage.
         -->
 
         <exec executable="phpcs" output="/dev/null">
@@ -174,7 +174,7 @@
 
     <target name="phpdoc" depends="setup" description="Generate programming documentation with PHPDoc">
         <!--
-            PHPDoc generates documentation for your project. See http://www.phpdoc.org for
+            PHPDoc generates documentation for your project. See https://www.phpdoc.org for
             configuration/usage examples.
 
             To generate different outputs, try any (or all) of the following
@@ -190,7 +190,7 @@
         <!--
             Visualize errors in your code from CodeSniffer and PhpUnit
 
-            see http://github.com/mayflowergmbh/PHP_CodeBrowser
+            see https://github.com/mayflowergmbh/PHP_CodeBrowser
         -->
         <exec executable="phpcb">
             <arg line="--log   ${build}/logs

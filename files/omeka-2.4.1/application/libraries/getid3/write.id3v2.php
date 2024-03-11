@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -1110,7 +1110,7 @@ class getid3_write_id3v2
 
 				case 'RGAD':
 					//   RGAD Replay Gain Adjustment
-					//   http://privatewww.essex.ac.uk/~djmrob/replaygain/
+					//   https://privatewww.essex.ac.uk/~djmrob/replaygain/
 					// Peak Amplitude                     $xx $xx $xx $xx
 					// Radio Replay Gain Adjustment        %aaabbbcd %dddddddd
 					// Audiophile Replay Gain Adjustment   %aaabbbcd %dddddddd
@@ -1803,7 +1803,7 @@ class getid3_write_id3v2
 
 	public function is_hash($var) {
 		// written by dev-nullØchristophe*vg
-		// taken from http://www.php.net/manual/en/function.array-merge-recursive.php
+		// taken from https://www.php.net/manual/en/function.array-merge-recursive.php
 		if (is_array($var)) {
 			$keys = array_keys($var);
 			$all_num = true;
@@ -1818,7 +1818,7 @@ class getid3_write_id3v2
 
 	public function array_join_merge($arr1, $arr2) {
 		// written by dev-nullØchristophe*vg
-		// taken from http://www.php.net/manual/en/function.array-merge-recursive.php
+		// taken from https://www.php.net/manual/en/function.array-merge-recursive.php
 		if (is_array($arr1) && is_array($arr2)) {
 			// the same -> merge
 			$new_array = array();
@@ -1877,7 +1877,7 @@ class getid3_write_id3v2
 		}
 		if ($allowUserPass !== true) {
 			if (strstr($url, '@')) {
-				// in the format http://user:pass@example.com  or http://user@example.com
+				// in the format https://user:pass@example.com  or https://user@example.com
 				// but could easily be somebody incorrectly entering an email address in place of a URL
 				return false;
 			}

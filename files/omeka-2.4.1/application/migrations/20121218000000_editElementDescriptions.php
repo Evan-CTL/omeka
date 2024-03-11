@@ -3,7 +3,7 @@
  * Omeka
  * 
  * @copyright Copyright 2007-2012 Roy Rosenzweig Center for History and New Media
- * @license http://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
+ * @license https://www.gnu.org/licenses/gpl-3.0.txt GNU GPLv3
  */
 
 /**
@@ -13,7 +13,7 @@ class editElementDescriptions extends Omeka_Db_Migration_AbstractMigration
 {
     public function up()
     {        
-        $dcSetDescription = "The Dublin Core metadata element set is common to all Omeka records, including items, files, and collections. For more information see, http://dublincore.org/documents/dces/.";        
+        $dcSetDescription = "The Dublin Core metadata element set is common to all Omeka records, including items, files, and collections. For more information see, https://dublincore.org/documents/dces/.";        
         $sql = "UPDATE {$this->db->ElementSet} SET description = ? WHERE name = ?";
         $this->db->query($sql, array($dcSetDescription, 'Dublin Core'));
         

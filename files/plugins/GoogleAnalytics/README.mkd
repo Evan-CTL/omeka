@@ -9,7 +9,7 @@ Analytics](https://www.google.com/analytics/).  You may need to set up an
 account and a profile for your Omeka site.
 
 Once you've done that, install this plugin (see [Managing
-Plugins](http://omeka.org/codex/Managing_Plugins) for more information). On the
+Plugins](https://omeka.org/codex/Managing_Plugins) for more information). On the
 configuration screen, you will need to paste in the Google Analytics
 JavaScript. You can do that by following these steps:
 

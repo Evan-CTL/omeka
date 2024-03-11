@@ -2,8 +2,8 @@
 <!DOCTYPE supplementalData SYSTEM "../../common/dtd/ldmlSupplemental.dtd">
 <!--
 Copyright © 1991-2013 Unicode, Inc.
-CLDR data files are interpreted according to the LDML specification (http://unicode.org/reports/tr35/)
-For terms of use, see http://www.unicode.org/copyright.html
+CLDR data files are interpreted according to the LDML specification (https://unicode.org/reports/tr35/)
+For terms of use, see https://www.unicode.org/copyright.html
 -->
 <supplementalData>
     <version number="$Revision: 9034 $"/>
@@ -12,8 +12,8 @@ For terms of use, see http://www.unicode.org/copyright.html
 		<!--
 		References:
 		1.	International Telecommunication Union: List Of ITU Recommendation E.164 Assigned Country Codes (Position on 15 September 2007)
-			available at <http://www.itu.int/opb/publications.aspx?parent=T-SP&view=T-SP2>
-		2.	World Telephone Numbering Guide <http://www.wtng.info/>
+			available at <https://www.itu.int/opb/publications.aspx?parent=T-SP&view=T-SP2>
+		2.	World Telephone Numbering Guide <https://www.wtng.info/>
 		
 		Special cases below: 001, AC, AQ, AS, GU, PS, VA, XK, YT
 		Unknown telephoneCountryCode for territories: BV, HM

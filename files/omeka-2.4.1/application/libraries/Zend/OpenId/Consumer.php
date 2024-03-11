@@ -8,7 +8,7 @@
  * This source file is subject to the new BSD license that is bundled
  * with this package in the file LICENSE.txt.
  * It is also available through the world-wide-web at this URL:
- * http://framework.zend.com/license/new-bsd
+ * https://framework.zend.com/license/new-bsd
  * If you did not receive a copy of the license and are unable to
  * obtain it through the world-wide-web, please send an email
  * to license@zend.com so we can send you a copy immediately.
@@ -16,8 +16,8 @@
  * @category   Zend
  * @package    Zend_OpenId
  * @subpackage Zend_OpenId_Consumer
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  * @version    $Id: Consumer.php 24593 2012-01-05 20:35:02Z matthew $
  */
 
@@ -47,8 +47,8 @@ require_once 'Zend/Http/Client.php';
  * @category   Zend
  * @package    Zend_OpenId
  * @subpackage Zend_OpenId_Consumer
- * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (http://www.zend.com)
- * @license    http://framework.zend.com/license/new-bsd     New BSD License
+ * @copyright  Copyright (c) 2005-2015 Zend Technologies USA Inc. (https://www.zend.com)
+ * @license    https://framework.zend.com/license/new-bsd     New BSD License
  */
 class Zend_OpenId_Consumer
 {
@@ -770,7 +770,7 @@ class Zend_OpenId_Consumer
                     $x)) {
                 $server = $x[1];
                 // $realId 
-                $realId = 'http://specs.openid.net/auth/2.0/identifier_select';
+                $realId = 'https://specs.openid.net/auth/2.0/identifier_select';
             }
             else {
                 $this->_setError("Unable to get URI for XRDS discovery");

@@ -1,8 +1,8 @@
 <?php
 /////////////////////////////////////////////////////////////////
 /// getID3() by James Heinrich <info@getid3.org>               //
-//  available at http://getid3.sourceforge.net                 //
-//            or http://www.getid3.org                         //
+//  available at https://getid3.sourceforge.net                 //
+//            or https://www.getid3.org                         //
 //          also https://github.com/JamesHeinrich/getID3       //
 /////////////////////////////////////////////////////////////////
 // See readme.txt for more details                             //
@@ -94,7 +94,7 @@ class getid3_zip extends getid3_handler
 					    !empty($info['zip']['files']['_rels']['.rels'])      &&
 					    !empty($info['zip']['files']['docProps']['app.xml']) &&
 					    !empty($info['zip']['files']['docProps']['core.xml'])) {
-						   // http://technet.microsoft.com/en-us/library/cc179224.aspx
+						   // https://technet.microsoft.com/en-us/library/cc179224.aspx
 						   $info['fileformat'] = 'zip.msoffice';
 						   if (!empty($ThisFileInfo['zip']['files']['ppt'])) {
 						      $info['mime_type'] = 'application/vnd.openxmlformats-officedocument.presentationml.presentation';
@@ -454,7 +454,7 @@ class getid3_zip extends getid3_handler
 	}
 
 	public static function ZIPcompressionMethodLookup($index) {
-		// http://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/ZIP.html
+		// https://www.sno.phy.queensu.ca/~phil/exiftool/TagNames/ZIP.html
 		static $ZIPcompressionMethodLookup = array(
 			0  => 'store',
 			1  => 'shrink',

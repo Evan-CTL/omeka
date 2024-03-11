@@ -38,11 +38,11 @@ d {
 }
 
 e {
-	background-image: url(http://example.com/test.png) !importANT;
+	background-image: url(https://example.com/test.png) !importANT;
 }
 
 f {
-	background-image: url(http://example.com/test.png)!imPORTant;
+	background-image: url(https://example.com/test.png)!imPORTant;
 }
 --EXPECT--
 array (
@@ -72,10 +72,10 @@ array (
   ),
   'e' => 
   array (
-    'background-image' => 'url(http://example.com/test.png)!important',
+    'background-image' => 'url(https://example.com/test.png)!important',
   ),
   'f' => 
   array (
-    'background-image' => 'url(http://example.com/test.png)!important',
+    'background-image' => 'url(https://example.com/test.png)!important',
   ),
 )
